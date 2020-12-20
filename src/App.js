@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1> hellokkkaman hi </h1>
+      <h1> hello </h1>
       <h1>Step 1 run deploy </h1>
       <h1>This should not be in master file a</h1>
     </div>
