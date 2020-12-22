@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Content/>
+      <Content/> {/* commiting a change */}
       <Footer/>
     </div> 
   );
