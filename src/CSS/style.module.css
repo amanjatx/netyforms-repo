@@ -1,0 +1,17 @@
+.headerClass {
+    color: brown;
+    background-color: burlywood;
+    margin: 0px;
+    padding : 10px;
+    text-align : center;
+}
+.contentClass {
+    color: brown;
+    background-color: rgb(197, 133, 50);
+    padding : 10px;
+}
+.footerClass {
+    color: rgb(247, 238, 238);
+    background-color: rgb(75, 46, 9);
+    padding : 10px;
+}
