@@ -5,6 +5,7 @@ import Footer from './Component/Footer.js';
 function App() {
   return (
     <div className="App">
+
       <Header/>
       <Content/> {/* commiting a change */}
       <Footer/>
