@@ -30,21 +30,9 @@
   }
 
 .contentClass {
-    /* background-color: rgb(255, 255, 255); */
     color : rgb(255, 255, 255);
 }
 
-.ccquicklines {
-    font-family: 'Pacifico', cursive;
-    /* background-color: rgb(166, 166, 250); */
-    display: flex;
-    flex-direction: column;
-}
-.ccquicklines > p {
-    text-align: center;
-    /* background-color: rgb(255, 240, 190); */
-    margin : 2px 0px;
-}
 .footerClass {
     background-color: rgb(236, 236, 236);
     padding : 10px;
@@ -52,22 +40,18 @@
 }
 .flexContainerIcons {
     display: flex;
-    /* background-color: blue; */
     justify-content : center;
 }
 .flexContainerIcons > div {
-    /* background-color: #fd0000; */
     margin: 5px 4%;
     padding: 5px;
     font-size: 30px;
   }
   .footerLinks {
     display: flex;
-    /* background-color: blue; */
     justify-content: space-evenly;
   }
   .footerLinks > p {
-    /* background-color: #fd0000; */
     margin: 2% auto;
     padding: 5px;
   }
