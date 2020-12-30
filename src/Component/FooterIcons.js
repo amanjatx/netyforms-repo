@@ -13,6 +13,7 @@ function FooterIcons() {
             <div><TwitterIcon /></div>
             <div><YouTubeIcon /></div>
             <div><LinkedInIcon /></div>
+            
         </div>
     )
 }
