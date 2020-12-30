@@ -16,7 +16,8 @@ const buttonStyle = {
     padding : '15px 0px',
     opacity : '90%',
     textTransform: 'none',
-    fontFamily: "'Open Sans', sans-serif"
+    fontFamily: "'Open Sans', sans-serif",
+    backgroundColor : '#ffffe6'
 }
 
 function Content() {
