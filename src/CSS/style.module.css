@@ -1,17 +1,52 @@
 .headerClass {
+<<<<<<< HEAD
     color: brown;
     background-color: rgb(192, 166, 166);
+=======
+    background-color: burlywood;
+>>>>>>> ab0685614104ad7c936d4c051ed8fe46c5edb6b7
     margin: 0px;
     padding : 10px;
     text-align : center;
 }
 .contentClass {
-    color: brown;
-    background-color: rgb(197, 133, 50);
+    background-color: rgb(255, 255, 255);
     padding : 10px;
+    color : rgb(44, 44, 44);
+}
+.ccquicklines {
+    /* background-color: rgb(166, 166, 250); */
+    display: flex;
+    flex-direction: column;
+}
+.ccquicklines > p {
+    text-align: center;
+    /* background-color: rgb(255, 240, 190); */
+    margin : 2px 0px;
 }
 .footerClass {
-    color: rgb(247, 238, 238);
-    background-color: rgb(75, 46, 9);
+    background-color: rgb(236, 236, 236);
     padding : 10px;
+    color : rgb(44, 44, 44);
 }
+.flexContainerIcons {
+    display: flex;
+    /* background-color: blue; */
+    justify-content : center;
+}
+.flexContainerIcons > div {
+    /* background-color: #fd0000; */
+    margin: 5px 4%;
+    padding: 5px;
+    font-size: 30px;
+  }
+  .footerLinks {
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+  }
+  .footerLinks > p {
+    /* background-color: #fd0000; */
+    margin: 2% auto;
+    padding: 5px;
+  }
