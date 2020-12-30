@@ -5,11 +5,11 @@
     text-align : center;
 }
 .contentClass {
-    background-color: rgb(255, 255, 255);
-    padding : 10px;
-    color : rgb(44, 44, 44);
+    /* background-color: rgb(255, 255, 255); */
+    color : rgb(255, 255, 255);
 }
 .ccquicklines {
+    font-family: 'Pacifico', cursive;
     /* background-color: rgb(166, 166, 250); */
     display: flex;
     flex-direction: column;
