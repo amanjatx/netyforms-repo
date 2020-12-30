@@ -5,16 +5,17 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import FooterIcons from './FooterIcons.js'
-import FooterLinks from './FooterLinks.js'
-function Footer() {
+function FooterIcons() {
     return (
-        <div className={styles.footerClass}>
-            <FooterIcons />
-            <hr></hr> {/* for a grey horizontal line */}
-            <FooterLinks />
+        <div className={styles.flexContainerIcons}>
+            <div><FacebookIcon /></div>
+            <div><InstagramIcon /></div>
+            <div><TwitterIcon /></div>
+            <div><YouTubeIcon /></div>
+            <div><LinkedInIcon /></div>
+            
         </div>
     )
 }
 
-export default Footer
+export default FooterIcons
