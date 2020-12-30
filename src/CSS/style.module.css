@@ -27,3 +27,13 @@
     padding: 5px;
     font-size: 30px;
   }
+  .footerLinks {
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+  }
+  .footerLinks > p {
+    /* background-color: #fd0000; */
+    margin: 2% auto;
+    padding: 5px;
+  }
