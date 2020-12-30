@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../CSS/style.module.css';
+// import styles from '../CSS/style.module.css';
 import Button from '@material-ui/core/Button';
 
 const buttonStyleDiv = {
@@ -9,7 +9,6 @@ const buttonStyleDiv = {
     flexDirection : 'column'
 }
 const buttonStyle = {
-    // color : 'red',
     width : '70%',
     alignSelf : 'center',
     margin : '5px 0px',
