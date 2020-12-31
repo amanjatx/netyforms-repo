@@ -2,6 +2,9 @@ import './App.css';
 import Header from './Component/Header.js';
 import Content from './Component/Content.js';
 import Footer from './Component/Footer.js';
+
+
+
 function App() {
   return (
     <div className="App">
