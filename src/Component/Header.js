@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import styles from '../CSS/style.module.css';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
-import Logo from './Logo';
-import ProfilePhoto from './ProfilePhoto';
+import Logo from './logo';
+import ProfilePhoto from './profilePhoto';
 import NavCollapse from './NavCollapase';
 
 
