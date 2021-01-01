@@ -1,17 +1,38 @@
-import React from 'react'
+import React, {Component} from 'react'
 import styles from '../CSS/style.module.css';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Logo from './logo';
-import ProfilePhoto from "./profilePhoto";
+import ProfilePhoto from './profilePhoto';
+import NavCollapse from './NavCollapase';
 
-export default function Header() {
+
+const menuBar = {
+    padding: '20px',
+    cursor: 'pointer'
+
+}
+
+
+   class Header extends Component { 
+              constructor(props) {
+                super(props)
+                this.componentRef = React.createRef();
+        }
+
+        clickHandler = () => {
+            this.componentRef.current.displayDiv();
+        }
+        render() {
     return (
-            
+            <>
+                <NavCollapse ref={this.componentRef} />  
              <div className={styles.headerClass}>
-                 <span className={styles.menuBar}><MenuRoundedIcon /></span>
-                 <Logo />
-                 <ProfilePhoto />
+                   <span style={menuBar} onClick={this.clickHandler}><MenuRoundedIcon /></span>
+                  <Logo />
+                  <ProfilePhoto />
              </div>
+            </>
     )
     }
-
+}
+ export default Header 
