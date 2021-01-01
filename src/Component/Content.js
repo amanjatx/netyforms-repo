@@ -1,5 +1,4 @@
 import React from 'react'
-// import styles from '../CSS/style.module.css';
 import background from '../Images/backimg.jpg';
 import CCbuttons from './CCbuttons.js'
 import CCquicklines from './CCquicklines';
