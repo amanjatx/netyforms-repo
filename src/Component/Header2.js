@@ -9,7 +9,7 @@ function Header2() {
     const [sideNavState, changeState] = useState('close');
     const sideNav = {
         color : 'white',
-        backgroundColor : 'rgb(44,44,44)',
+        backgroundColor : '#282828',
         position : 'fixed',
         zIndex : '2',
         width: sideNavState==='close' ? '0%' : '100%',
@@ -35,11 +35,14 @@ function Header2() {
 }
 
 export default Header2
+
 const logoDiv = {
     fontFamily: "'Permanent Marker', cursive",
     display : 'flex',
     justifyContent : 'center',
-    fontSize : '130%', }
+    fontSize : '130%', 
+    color : '#333333'
+}
 const avatarDiv = {
     display : 'flex',
     justifyContent : 'flex-end',
