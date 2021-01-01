@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from '../CSS/style.module.css';
 
- class Logo extends Component {
-     render() {
+
+const logo = {
+    padding: '20px',
+    display:  'flex',
+    justifyContent: 'center',
+    fontSize:  '30px'
+}
+
+ function Logo()  {
          return(
                <>
-                 <div className={styles.logo}>
+                 <div style={logo}>
                      Brand Name
                  </div>
                </>
 
          )
      }
- }
+
 
  export default Logo
