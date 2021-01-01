@@ -6,17 +6,19 @@ import CloseIcon from '@material-ui/icons/Close';
 
 const option = {
     backgroundColor : '#36342C',
-    width: '250px',
+    width: '240px',
+    left: '-280px',
     height: '100%',
     position: 'fixed',
     overflow : 'hidden',
     color: 'white',
-    transition: 'left 2s',
-    borderTopRightRadius: '80px',
+    transition: 'left 0.7s',
+    // borderTopRightRadius: '80px',
     paddingLeft: '20px',
     paddingTop: '10px',
-    position: 'absolute',
-    left: '-280px'
+    // position: 'absolute',
+
+    zIndex : '2',
 }
 
 const optLinks = {
