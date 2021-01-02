@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/netyforms-repo/static/css/main.105fb85f.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.28036769.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.28036769.chunk.js.map",
+    "main.js": "/netyforms-repo/static/js/main.86b9a512.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.86b9a512.chunk.js.map",
     "runtime-main.js": "/netyforms-repo/static/js/runtime-main.ee09d9eb.js",
     "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.ee09d9eb.js.map",
     "static/js/2.3e097caf.chunk.js": "/netyforms-repo/static/js/2.3e097caf.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.ee09d9eb.js",
     "static/js/2.3e097caf.chunk.js",
     "static/css/main.105fb85f.chunk.css",
-    "static/js/main.28036769.chunk.js"
+    "static/js/main.86b9a512.chunk.js"
   ]
 }
