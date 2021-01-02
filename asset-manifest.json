@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/netyforms-repo/static/css/main.105fb85f.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.86b9a512.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.86b9a512.chunk.js.map",
-    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.ee09d9eb.js",
-    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.ee09d9eb.js.map",
-    "static/js/2.3e097caf.chunk.js": "/netyforms-repo/static/js/2.3e097caf.chunk.js",
-    "static/js/2.3e097caf.chunk.js.map": "/netyforms-repo/static/js/2.3e097caf.chunk.js.map",
-    "static/js/3.43d48eea.chunk.js": "/netyforms-repo/static/js/3.43d48eea.chunk.js",
-    "static/js/3.43d48eea.chunk.js.map": "/netyforms-repo/static/js/3.43d48eea.chunk.js.map",
+    "main.js": "/netyforms-repo/static/js/main.6ce62c32.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.6ce62c32.chunk.js.map",
+    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.005c51d8.js",
+    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.005c51d8.js.map",
+    "static/js/2.240f28ba.chunk.js": "/netyforms-repo/static/js/2.240f28ba.chunk.js",
+    "static/js/2.240f28ba.chunk.js.map": "/netyforms-repo/static/js/2.240f28ba.chunk.js.map",
+    "static/js/3.3f18d52e.chunk.js": "/netyforms-repo/static/js/3.3f18d52e.chunk.js",
+    "static/js/3.3f18d52e.chunk.js.map": "/netyforms-repo/static/js/3.3f18d52e.chunk.js.map",
     "index.html": "/netyforms-repo/index.html",
     "static/css/main.105fb85f.chunk.css.map": "/netyforms-repo/static/css/main.105fb85f.chunk.css.map",
-    "static/js/2.3e097caf.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.3e097caf.chunk.js.LICENSE.txt",
+    "static/js/2.240f28ba.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.240f28ba.chunk.js.LICENSE.txt",
     "static/media/backimg.3c279fc9.jpg": "/netyforms-repo/static/media/backimg.3c279fc9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee09d9eb.js",
-    "static/js/2.3e097caf.chunk.js",
+    "static/js/runtime-main.005c51d8.js",
+    "static/js/2.240f28ba.chunk.js",
     "static/css/main.105fb85f.chunk.css",
-    "static/js/main.86b9a512.chunk.js"
+    "static/js/main.6ce62c32.chunk.js"
   ]
 }
