@@ -3,7 +3,7 @@ import Content from './Component/Content.js';
 import Footer from './Component/Footer.js';
 import Header2 from './Component/Header2';
 import ContentDetail from './Component/ContentDetail';
-import Rough2 from './Component/Rough2.js';
+// import Rough2 from './Component/Rough2.js';
 
 function App() {
   return (
