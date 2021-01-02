@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const heading = {
     fontSize : '150%',
 }
@@ -10,7 +11,7 @@ const para = {
 const cdDiv = {
     // background : "linear-gradient(to left, #ffffff 56%, #ffff00 150%)",
     backgroundColor :'#ffff00',
-    margin : '-20px',
+    margin : '0px',
     padding : '50px',
     paddingTop : '30px',
     fontFamily: "'Montserrat', sans-serif",
