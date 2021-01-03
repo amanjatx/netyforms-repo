@@ -6,19 +6,21 @@ const logo = {
     padding: '20px',
     display:  'flex',
     justifyContent: 'center',
-    fontSize:  '30px'
+    fontSize:  '22px',
+    fontFamily : 'Alegreya SC',
 }
 
- function Logo()  {
+   function Logo()  {
+
          return(
                <>
-                 <div style={logo}>
-                     Brand Name
+                 <div style={logo} >
+                     NetyForms
                  </div>
                </>
 
          )
-     }
-
+    
+}
 
  export default Logo

@@ -16,7 +16,8 @@ const buttonStyle = {
     opacity : '90%',
     textTransform: 'none',
     fontFamily: "'Open Sans', sans-serif",
-    backgroundColor : '#ffffe6'
+    backgroundColor : '#ffffe6',
+    boxShadow : ' 2px 3px 0px #ABABA7'
 }
 
 function Content() {

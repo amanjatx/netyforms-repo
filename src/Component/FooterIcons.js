@@ -5,6 +5,8 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+
 function FooterIcons() {
     return (
         <div className={styles.flexContainerIcons}>
