@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/netyforms-repo/static/css/main.3b5de9a0.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.6649c9fa.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.6649c9fa.chunk.js.map",
-    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.49e5a042.js",
-    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.49e5a042.js.map",
-    "static/js/2.066ed205.chunk.js": "/netyforms-repo/static/js/2.066ed205.chunk.js",
-    "static/js/2.066ed205.chunk.js.map": "/netyforms-repo/static/js/2.066ed205.chunk.js.map",
-    "static/js/3.0ad75463.chunk.js": "/netyforms-repo/static/js/3.0ad75463.chunk.js",
-    "static/js/3.0ad75463.chunk.js.map": "/netyforms-repo/static/js/3.0ad75463.chunk.js.map",
+    "main.css": "/netyforms-repo/static/css/main.160a7ac0.chunk.css",
+    "main.js": "/netyforms-repo/static/js/main.2595cdf9.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.2595cdf9.chunk.js.map",
+    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.6e328d84.js",
+    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.6e328d84.js.map",
+    "static/js/2.302873cc.chunk.js": "/netyforms-repo/static/js/2.302873cc.chunk.js",
+    "static/js/2.302873cc.chunk.js.map": "/netyforms-repo/static/js/2.302873cc.chunk.js.map",
+    "static/js/3.fce84e34.chunk.js": "/netyforms-repo/static/js/3.fce84e34.chunk.js",
+    "static/js/3.fce84e34.chunk.js.map": "/netyforms-repo/static/js/3.fce84e34.chunk.js.map",
     "index.html": "/netyforms-repo/index.html",
-    "static/css/main.3b5de9a0.chunk.css.map": "/netyforms-repo/static/css/main.3b5de9a0.chunk.css.map",
-    "static/js/2.066ed205.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.066ed205.chunk.js.LICENSE.txt",
+    "static/css/main.160a7ac0.chunk.css.map": "/netyforms-repo/static/css/main.160a7ac0.chunk.css.map",
+    "static/js/2.302873cc.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.302873cc.chunk.js.LICENSE.txt",
     "static/media/backimg.828dfb12.jpg": "/netyforms-repo/static/media/backimg.828dfb12.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.49e5a042.js",
-    "static/js/2.066ed205.chunk.js",
-    "static/css/main.3b5de9a0.chunk.css",
-    "static/js/main.6649c9fa.chunk.js"
+    "static/js/runtime-main.6e328d84.js",
+    "static/js/2.302873cc.chunk.js",
+    "static/css/main.160a7ac0.chunk.css",
+    "static/js/main.2595cdf9.chunk.js"
   ]
 }
