@@ -5,7 +5,7 @@ import Logo from './Logo';
 import NavCollapse from './NavCollapase';
 import PersonIcon from '@material-ui/icons/Person';
 
-const menuStyle = {
+const menuStyle = { 
     padding: '20px',
     cursor: 'pointer',
 }
