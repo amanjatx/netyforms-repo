@@ -1,6 +1,6 @@
 import React from 'react'
 import background from '../Images/backimg.jpg';
-import CCbuttons from './CCbuttons.js'
+// import CCbuttons from './CCbuttons.js'
 import CCquicklines from './CCquicklines';
 
 const ccTop = { 
@@ -12,7 +12,7 @@ function Content() {
     return (
         <div style={ccTop} >
             <CCquicklines />
-            <CCbuttons />
+            {/* <CCbuttons /> */}
         </div>
     )
 }

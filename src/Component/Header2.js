@@ -27,7 +27,7 @@ function Header2() {
 
         <div className={styles.HeaderDiv}>
             <div> <BtnMenu toggle={toggle}/> </div>
-            <div style={logoDiv}> LoveCalcy </div>
+            <div style={logoDiv}>LoveCalcy</div>
             {/* <div style={avatarDiv}> <img src={avatar} height={'35px'} alt='avatar icon'></img> </div> */}
         </div>
         </>
@@ -41,10 +41,6 @@ const logoDiv = {
     display : 'flex',
     justifyContent : 'center',
     fontSize : '130%', 
-    color : '#333333'
+    color : '#333333',
 }
-const avatarDiv = {
-    display : 'flex',
-    justifyContent : 'flex-end',
-    paddingRight : '10px',
-}
+
