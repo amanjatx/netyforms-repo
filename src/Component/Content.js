@@ -3,7 +3,9 @@ import BoxOuter from './BoxOuter';
 import CCquicklines from './CCquicklines';
 
 const ccTop = { 
-    color : 'rgb(255, 255, 255)',
+    // color : 'red',
+    // backgroundColor : 'red',
+    paddingBottom : '36px',
 }
 
 function Content() {
@@ -11,7 +13,6 @@ function Content() {
         <div style={ccTop} >
             <CCquicklines />
             <BoxOuter />
-
         </div>
     )
 }

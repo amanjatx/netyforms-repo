@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../CSS/style.module.css'
-import avatar from '../Images/avatar.png'
 import SideNav from './SideNav.js';
 import BtnMenu from './BtnMenu';
 
