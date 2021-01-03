@@ -27,8 +27,8 @@ function Header2() {
 
         <div className={styles.HeaderDiv}>
             <div> <BtnMenu toggle={toggle}/> </div>
-            <div style={logoDiv}> Netyforms </div>
-            <div style={avatarDiv}> <img src={avatar} height={'35px'} alt='avatar icon'></img> </div>
+            <div style={logoDiv}> LoveCalcy </div>
+            {/* <div style={avatarDiv}> <img src={avatar} height={'35px'} alt='avatar icon'></img> </div> */}
         </div>
         </>
     )

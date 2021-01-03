@@ -33,7 +33,7 @@ function SideNav(props) {
       <Divider style={divider}/>
       <div style={optionsStyle}>{LinkTitleMap}</div> 
       <Divider style={divider2}/>
-      <div style={logoDiv}> Netyforms </div>
+      <div style={logoDiv}> Lovecalcy </div>
       <div style={bottomLine}> &copy; 2020</div>
     </div>
   )
