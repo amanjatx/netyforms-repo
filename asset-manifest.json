@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/netyforms-repo/static/css/main.3b5de9a0.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.8b73d606.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.8b73d606.chunk.js.map",
+    "main.js": "/netyforms-repo/static/js/main.26ef58e7.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.26ef58e7.chunk.js.map",
     "runtime-main.js": "/netyforms-repo/static/js/runtime-main.005c51d8.js",
     "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.005c51d8.js.map",
-    "static/js/2.240f28ba.chunk.js": "/netyforms-repo/static/js/2.240f28ba.chunk.js",
-    "static/js/2.240f28ba.chunk.js.map": "/netyforms-repo/static/js/2.240f28ba.chunk.js.map",
+    "static/js/2.ba1d0c9a.chunk.js": "/netyforms-repo/static/js/2.ba1d0c9a.chunk.js",
+    "static/js/2.ba1d0c9a.chunk.js.map": "/netyforms-repo/static/js/2.ba1d0c9a.chunk.js.map",
     "static/js/3.3f18d52e.chunk.js": "/netyforms-repo/static/js/3.3f18d52e.chunk.js",
     "static/js/3.3f18d52e.chunk.js.map": "/netyforms-repo/static/js/3.3f18d52e.chunk.js.map",
     "index.html": "/netyforms-repo/index.html",
     "static/css/main.3b5de9a0.chunk.css.map": "/netyforms-repo/static/css/main.3b5de9a0.chunk.css.map",
-    "static/js/2.240f28ba.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.240f28ba.chunk.js.LICENSE.txt",
-    "static/media/backimg.3c279fc9.jpg": "/netyforms-repo/static/media/backimg.3c279fc9.jpg"
+    "static/js/2.ba1d0c9a.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.ba1d0c9a.chunk.js.LICENSE.txt",
+    "static/media/backimg.828dfb12.jpg": "/netyforms-repo/static/media/backimg.828dfb12.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.005c51d8.js",
-    "static/js/2.240f28ba.chunk.js",
+    "static/js/2.ba1d0c9a.chunk.js",
     "static/css/main.3b5de9a0.chunk.css",
-    "static/js/main.8b73d606.chunk.js"
+    "static/js/main.26ef58e7.chunk.js"
   ]
 }
