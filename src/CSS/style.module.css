@@ -54,9 +54,9 @@
   }
   .radioGroupDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
   }
   .radioGroupDiv > div > label {
     color :#333333;
-    font-size : 900%;
+    font-size : 900px !important;
   }
