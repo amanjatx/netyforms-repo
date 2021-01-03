@@ -6,37 +6,30 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
+import { green } from '@material-ui/core/colors';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(1),
-        width: '25ch',
-      },
-    },
-  }));
+
+
 
 const boxOuterDiv = {
     backgroundColor : 'pink',
+    color : 'black'
 }
 function BoxOuter() {
-    const classes = useStyles();
-    const [value, setValue] = React.useState('female');
 
-    const handleChange = (event) => {
-      setValue(event.target.value);
-    };
+    const [selectedValue, setSelectedValue] = React.useState('male');
+    const changeOption = (event) => {
+        console.log('hi')
+        setSelectedValue(event.target.value)
+    }
     return (
         <div style={boxOuterDiv}>
-            <FormControl component="fieldset">
-                <TextField id="standard-basic" label="Your Name" />
-                <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-                    <FormControlLabel value="female" control={<Radio />} label="Female" />
-                    <FormControlLabel value="male" control={<Radio />} label="Male" />
-                    <FormControlLabel value="other" control={<Radio />} label="Other" />
-                    <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
-                </RadioGroup>
-            </FormControl>
+            Current Status : {selectedValue}
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value='male' onChange={changeOption}></input> Male
+            <input type="radio" id="female" name="gender" value='female' onChange={changeOption}></input> Female
+            <input type="radio" id="other" name="gender" value='other' onChange={changeOption}></input> Other
         </div>
     )
 }
