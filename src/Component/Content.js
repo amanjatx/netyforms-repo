@@ -2,16 +2,18 @@ import React from 'react'
 import BoxOuter from './BoxOuter';
 import CCquicklines from './CCquicklines';
 
-const ccTop = { 
-    color : 'rgb(255, 255, 255)',
+const contentStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent : 'center'
+
 }
 
 function Content() {
     return (
-        <div style={ccTop} >
+        <div style={contentStyle}>
             <CCquicklines />
             <BoxOuter />
-
         </div>
     )
 }

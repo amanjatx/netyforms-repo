@@ -6,7 +6,7 @@ const ccQuickLine1 = {
     margin : '2px 0px',
     fontSize : "25px",
     fontFamily: "'Pacifico', cursive",
-    color : '#ff00ff'
+    color : '#E84F69'  //#ff00ff
 }
 const ccQuickLine2 = { 
     textAlign : "center", 
@@ -14,7 +14,7 @@ const ccQuickLine2 = {
     fontSize : "13px", 
     fontFamily: "'Open Sans', sans-serif", 
     opacity : '0.7',
-    color : 'White'
+    color : '#DE667B'
 }
 
 function CCquicklines() {

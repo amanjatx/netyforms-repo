@@ -12,7 +12,7 @@ function BtnMenu(props) {
         </Button> 
         </>
     )
-}
+    }
 
 export default BtnMenu
 

@@ -9,7 +9,7 @@ function Header2() {
     const [sideNavState, changeState] = useState('close');
     const sideNav = {
         color : 'white',
-        backgroundColor : '#282828',
+        backgroundColor : '#F59BAA',  //#282828
         position : 'fixed',
         zIndex : '2',
         width: sideNavState==='close' ? '0%' : '100%',
@@ -23,13 +23,14 @@ function Header2() {
     }
     return (
         <>
-        <SideNav styleprop={sideNav} toggle={toggle}  />
+        
 
         <div className={styles.HeaderDiv}>
             <div> <BtnMenu toggle={toggle}/> </div>
-            <div style={logoDiv}>LoveCalcy</div>
+            <div style={logoDiv}>Love<span>Calcy</span></div>
             {/* <div style={avatarDiv}> <img src={avatar} height={'35px'} alt='avatar icon'></img> </div> */}
         </div>
+        <SideNav styleprop={sideNav} toggle={toggle}  />
         </>
     )
 }
