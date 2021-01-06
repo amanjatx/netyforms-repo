@@ -1,27 +1,15 @@
 import React from 'react'
-
-const stateCapital = [
-    {
-        state : 'mp',
-        capital :'bhopal'
-    },
-    {
-        state : 'cg',
-        capital : 'raipur'
-    }
-]
-// const stateCapital = ['sc','cs']
-const stateCapitalMap = stateCapital.map((sc)=> 
-    <>
-        <p> {sc.state} == {sc.capital}</p>
-    </>
-)
+import Button from '@material-ui/core/Button'
 function Rough2() {
-    return (
-        <div>
-            {stateCapitalMap}
-        </div>
-    )
+  return (
+    <div>
+      Hii
+      <div>
+        <Button variant='contained' color='primary'>Click Baby</Button>
+      </div>
+      Hello
+    </div>
+  )
 }
 
 export default Rough2

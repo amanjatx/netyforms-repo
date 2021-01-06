@@ -33,8 +33,8 @@ function BoxOuter() {
     ]
     const dataMap = data.map( (dal) =>
         <>
-            <div>
-                <TextField id="standard-basic" label={dal.title} />
+            <div >
+                <TextField className={styles.radioLabel} id="standard-basic" label={dal.title} />
             </div>
             <div className={styles.radioDiv}>
                 <FormControl component="fieldset">
