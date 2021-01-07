@@ -28,6 +28,7 @@ const useStyles = makeStyles({
         '&:after'  : { borderBottom: '1px solid rgba(255, 51, 133, 1)', },  //animation out s
         color   : 'rgba(255,255,255, 0.9)',
         padding : '0px 20px',
+        fontFamily: `'Quicksand', sans-serif`,
     },
     rootRadioGroup : {
         display : 'flex',
@@ -37,11 +38,13 @@ const useStyles = makeStyles({
     },
     labelFormControlLabelRadio : {
         color : 'rgba(255, 204, 224, 0.9)',
-        fontSize : '90%'
+        fontSize : '90%',
+        fontFamily: `'Quicksand', sans-serif`,
     },
     rootButton : {
         margin : '20px 10px',
         textTransform : 'none',
+        fontFamily: `'Quicksand', sans-serif`,
     }
 })
 
@@ -81,19 +84,13 @@ function CCBox() {
             </FormControl>
         </div>
     )
-    const theme = createMuiTheme ({
-        typography : {
-            fontFamily: `'Quicksand', sans-serif`, // gloablly
-        }
-    })
+
     return (
-        <>
-        <ThemeProvider theme={theme}>
+        <>    
         <Paper elevation={6} classes={{ root: classes.root }} >
             {dataMap}
             <Button variant='outlined' classes={{root : classes.rootButton}}>Calculate</Button>
         </Paper>
-        </ThemeProvider>
         </>
     )
 }
