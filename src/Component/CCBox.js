@@ -1,5 +1,5 @@
 import React from 'react'
-import {RadioGroup, FormControlLabel, Radio, Paper, TextField, FormControl, Input} from '@material-ui/core'
+import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -9,6 +9,8 @@ const useStyles = makeStyles({
         border: 0,
         padding: '20px 30px',
         margin : '10px 40px',
+        display : 'flex',
+        flexDirection : 'column',
         '& > div' : {
             display : 'flex',
             flexDirection : 'column',
@@ -36,6 +38,10 @@ const useStyles = makeStyles({
     labelFormControlLabelRadio : {
         color : 'rgba(255, 204, 224, 0.9)',
         fontSize : '90%'
+    },
+    rootButton : {
+        margin : '20px 10px',
+        textTransform : 'none',
     }
 })
 
@@ -56,11 +62,11 @@ function CCBox() {
             val : value1, method : handleChange1,
         },
         {
-            title : 'Your Partner Name', name : 'name2',
+            title : 'Your Crush Name', name : 'name2',
             radioGroupName : 'genderf2',
             al : 'gender',
             val : value2, method : handleChange2,
-        }
+        },
     ]
     const dataMap = data.map( (dal) =>
         <div>
@@ -69,18 +75,25 @@ function CCBox() {
             </FormControl> 
             <FormControl>
                 <RadioGroup aria-label={dal.al} name={dal.radioGroupName} value={dal.val} onChange={dal.method} classes={{root : classes.rootRadioGroup}}>
-                    <FormControlLabel value="female" control={<Radio />} label="Female" classes={{label : classes.labelFormControlLabelRadio}}/> 
-                    <FormControlLabel value="male" control={<Radio />} label="Male" classes={{label : classes.labelFormControlLabelRadio}}/> 
+                    <FormControlLabel value="female" control={<Radio size='small'/>} label="Female" classes={{label : classes.labelFormControlLabelRadio}}/> 
+                    <FormControlLabel value="male" control={<Radio size='small'  />} label="Male" classes={{label : classes.labelFormControlLabelRadio}}/> 
                 </RadioGroup>
             </FormControl>
         </div>
     )
-    
+    const theme = createMuiTheme ({
+        typography : {
+            fontFamily: `'Quicksand', sans-serif`, // gloablly
+        }
+    })
     return (
         <>
+        <ThemeProvider theme={theme}>
         <Paper elevation={6} classes={{ root: classes.root }} >
             {dataMap}
+            <Button variant='outlined' classes={{root : classes.rootButton}}>Calculate</Button>
         </Paper>
+        </ThemeProvider>
         </>
     )
 }
