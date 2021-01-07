@@ -16,7 +16,6 @@ const useStyles = makeStyles({
             flexDirection : 'column',
             justifyContent : 'center',
             alignItems : 'center',
-            // backgroundColor : 'black',
             padding : '10px 0',
             margin : '10px 0'
         }
@@ -45,7 +44,15 @@ const useStyles = makeStyles({
         margin : '20px 10px',
         textTransform : 'none',
         fontFamily: `'Quicksand', sans-serif`,
-    }
+    },
+    rootRadio: {
+        '&$checked': {
+          color: '#ffccd5'  // checked color 
+        },
+        color : 'pink' // unchecked color 
+      },
+    checked: {},
+
 })
 
 function CCBox() {
@@ -78,8 +85,34 @@ function CCBox() {
             </FormControl> 
             <FormControl>
                 <RadioGroup aria-label={dal.al} name={dal.radioGroupName} value={dal.val} onChange={dal.method} classes={{root : classes.rootRadioGroup}}>
-                    <FormControlLabel value="female" control={<Radio size='small'/>} label="Female" classes={{label : classes.labelFormControlLabelRadio}}/> 
-                    <FormControlLabel value="male" control={<Radio size='small'  />} label="Male" classes={{label : classes.labelFormControlLabelRadio}}/> 
+                    <FormControlLabel 
+                        value="female" 
+                        control={ 
+                            <Radio 
+                                size='small' 
+                                color='primary' 
+                                classes={{ root: classes.rootRadio, checked: classes.checked, }}
+                            />
+                        } 
+                        label="Female" 
+                        classes={
+                            {label : classes.labelFormControlLabelRadio}
+                        }
+                    /> 
+                    <FormControlLabel
+                        value="male"
+                        control={
+                            <Radio 
+                                size='small' 
+                                color='primary' 
+                                classes={{ root: classes.rootRadio, checked: classes.checked, }}
+                            />
+                        }
+                        label="Male"
+                        classes={
+                            {label : classes.labelFormControlLabelRadio}
+                        }
+                    /> 
                 </RadioGroup>
             </FormControl>
         </div>
