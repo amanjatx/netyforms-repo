@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid, Button, Paper, TextField, FormControl} from '@material-ui/core'
+import {Grid, Button, Paper, TextField, FormControl, Input} from '@material-ui/core'
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import styles from '../CSS/style.module.css'
 
@@ -16,17 +16,32 @@ const useStyles = makeStyles({
         margin : '10px 40px',
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       },
+      input: {
+        '&:hover:not(.Mui-disabled):before' : {
+            borderBottom : '1px solid rgba(255, 51, 133, 1)' // outer click
+        },
+        '&:hover:not(.Mui-disabled):after' : {
+            border : '1px solid rgba(255, 51, 133, 1)' // animation in 
+        },
+        '&:before' : {
+            borderBottom: '1px solid rgba(255, 204, 224, 0.5)', // normally
+        },
+        '&:after': {
+            borderBottom: '1px solid rgba(255, 51, 133, 1)', //animation out 255, 51, 133
+        },
+        color : 'rgba(255,255,255, 0.9)',
+        padding : '5px 20px',
+    }
+      
 })
 
 function CCBox() {
     const classes = useStyles();
     return (
         <>
-        {/* <Button variant='outlined' color='primary'>Hello</Button> */}
-        <Paper classes={classes}>
+        <Paper classes={{ root: classes.root }} >
             <FormControl>
-                <TextField id="standard-basic" label='Your Name Here'/>
-                {/* <Button variant='outlined' color='primary'>Hello</Button> */}
+                <Input placeholder='Your Name' classes={{ underline : classes.input}}/>
             </FormControl>
         </Paper>
         </>
