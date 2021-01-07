@@ -4,7 +4,7 @@ import SideNav from './SideNav.js';
 import BtnMenu from './BtnMenu';
 
 
-function Header2() {
+function Header() {
     const [sideNavState, changeState] = useState('close');
     const sideNav = {
         color : 'white',
@@ -33,7 +33,7 @@ function Header2() {
     )
 }
 
-export default Header2
+export default Header
 
 const logoDiv = {
     fontFamily: "'Permanent Marker', cursive",

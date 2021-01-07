@@ -5,7 +5,6 @@ import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Divider from '@material-ui/core/Divider';
 
 // STYLE of sidenav and TOGGLE method got as props
-// also given below as comment for future use
 
 const sideNavButton = {
   margin : '10px',
@@ -41,8 +40,6 @@ function SideNav(props) {
 
 export default SideNav
 
-// styling objects begins
-
 const closeBtn = {
   width : '100%',
   height : '60px',
@@ -66,7 +63,6 @@ const logoDiv = {
 const bottomLine = {
   fontSize : '70%', 
   fontFamily : "'Open Sans', sans-serif",
-  // backgroundColor : '#4d4d4d',
   display : 'flex',
   justifyContent : 'center',
 }
@@ -87,18 +83,3 @@ const divider2 = {
   margin : '0px 40px',
   opacity : '0.1',
 }
-// const sideNav = {
-//   color : 'white',
-//   backgroundColor : 'rgb(44,44,44)',
-//   position : 'fixed',
-//   zIndex : '2',
-//   width: sideNavState==='close' ? '0%' : '100%',
-//   opacity : sideNavState === 'close' ? '0' : '1',
-//   height : '100%',
-//   // left : sideNavState=='open'? '' :'-100%',
-//   transition : '0.5s',
-// }
-
-// const toggle = () => {
-//   changeState(sideNavState==='close' ? 'open' : 'close')
-// }
