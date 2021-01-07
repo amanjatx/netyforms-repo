@@ -1,13 +1,7 @@
 import React from 'react'
-import {Grid, Button, Paper, TextField} from '@material-ui/core'
+import {Grid, Button, Paper, TextField, FormControl} from '@material-ui/core'
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
-import { orange } from '@material-ui/core/colors';
-import { FullscreenExit } from '@material-ui/icons';
-
-const paperstyle = {
-    padding : '10px',
-    margin : '10px',
-}
+import styles from '../CSS/style.module.css'
 
 const useStyles = makeStyles({
     root: {
@@ -24,32 +18,18 @@ const useStyles = makeStyles({
       },
 })
 
-const theme = createMuiTheme ({
-    palette : {
-        primary : {
-            main : '#d9d9d9'
-        }
-    },
-    typography : {
-        fontSize : 14,
-    },
-    overrides : {
-        MuiInputBase : {
-            label : 'Your Text Here'
-        }
-    }
- })
-
 function CCBox() {
     const classes = useStyles();
     return (
-        <div>
-            <ThemeProvider theme={theme}>
-                <Paper variant="outlined" elevation={3} classes={{ root : classes.root }} >
-                    <TextField id="standard-basic" label="Standard" />
-                </Paper>
-            </ThemeProvider>
-        </div>
+        <>
+        {/* <Button variant='outlined' color='primary'>Hello</Button> */}
+        <Paper classes={classes}>
+            <FormControl>
+                <TextField id="standard-basic" label='Your Name Here'/>
+                {/* <Button variant='outlined' color='primary'>Hello</Button> */}
+            </FormControl>
+        </Paper>
+        </>
     )
 }
 
