@@ -1,40 +1,73 @@
 import React, {useState} from 'react' 
-// import TextField from '@material-ui/core/TextField';
-// import Radio from '@material-ui/core/Radio';
-// import RadioGroup from '@material-ui/core/RadioGroup';
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import FormControl from '@material-ui/core/FormControl';
-// import FormLabel from '@material-ui/core/FormLabel';
-// import { makeStyles } from '@material-ui/core/styles';
-// import { withStyles } from '@material-ui/core/styles';
-// import { green } from '@material-ui/core/colors';
+//import TextField from '@material-ui/core/TextField';
+//import {theme} from './theme';
+//import {ThemeProvider} from '@material-ui/core/styles';
+import InputBase  from '@material-ui/core/InputBase';
+import { makeStyles } from '@material-ui/core/styles'; 
+import FavoriteIcon from '@material-ui/icons/Favorite'; 
+import Box from '@material-ui/core/Box';
+import { Typography } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
 
+  const useStyle = makeStyles( (theme) => ({
+     input: {
+            border: '2px solid #E9798C',
+            padding: '7px',
+            borderRadius : '25px',
+            boxShadow: '2px 0px 2px #E9798C',
+            backgroundColor: 'white',
+            margin: '10px 0px' 
+     },
+     box: {  backgroundColor : '#F59BAA',
+             color : 'black',
+             display: 'flex',
+             flexDirection: 'column',
+             justifyContent: 'center',
+             margin : '50px',
+             padding : '20px 50px',
+             borderRadius : '15px',   
+     },
+     typo: {
+          display: 'flex',
+          justifyContent: 'center',
+     }, 
+        heart: {
+           color: 'white',
+           fontSize: '2rem'
+     }
+       
 
+ 
+} ) 
 
-const boxOuterDiv = {
+); 
+
+/*const boxOuterDiv = {
     backgroundColor : '#F59BAA',
     color : 'black',
     display: 'flex',
-    justifyContent: 'center'
-} 
-function BoxOuter() {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    margin : '50px',
+    padding : '20px 50px',
+    borderRadius : '15px',
 
-    const [selectedValue, setSelectedValue] = useState();
-        const  changeOption = (event) => {
-        console.log('hi');
-        setSelectedValue(event.target.value );
-    }
+} */
+function BoxOuter() {
+     const classes = useStyle();  
+    
     return (
-        <div style={boxOuterDiv}>
-        <div >
-            Current Status : {selectedValue}
-            <p>Please select your gender:</p>
-            <input type="radio" id="male" name="gender" value='male' onChange={changeOption}></input>
-                 <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value='female' onChange={changeOption}></input> Female
-            <input type="radio" id="other" name="gender" value='other' onChange={changeOption}></input> Other
-        </div>
-        </div>
+         <form >
+        <Box className={classes.box}>  
+             <InputBase placeholder="your name" className={classes.input} />
+             <Box className={classes.typo}>
+             <FavoriteIcon className={classes.heart} /> 
+                   <AddIcon color="white"/>
+             </Box>
+             <InputBase placeholder="your name" className={classes.input} />
+              
+        </Box>
+        </form>
     )
 }
 
