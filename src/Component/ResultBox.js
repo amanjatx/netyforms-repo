@@ -2,6 +2,7 @@ import React from 'react'
 import {Paper, Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
+import { Link } from 'react-router-dom'
 
 const resultBoxStyle = makeStyles({
     root: {
@@ -41,7 +42,7 @@ const resultBoxStyle = makeStyles({
             textAlign : 'center',
             '&>span':{
                 backgroundColor : 'rgba(242, 242, 242, 0.7)',
-                padding : '2px',
+                padding : '2px 4px',
                 borderRadius : '5px',
                 color : 'Green'
             }
@@ -53,7 +54,7 @@ const resultBoxStyle = makeStyles({
         border : '1px solid white',
         color : 'white',
     },
-})
+}) 
 
 function CCBox() {
     
@@ -69,7 +70,7 @@ function CCBox() {
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
             </Paper>
-        </>
+        </> 
     )
 }
 export default CCBox

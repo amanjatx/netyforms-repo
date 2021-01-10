@@ -9,7 +9,7 @@ const useStyles = makeStyles({
         margin : '10px 40px',
         display : 'flex',
         flexDirection : 'column',
-        '& > div' : {
+        '& > form' : {
             display : 'flex',
             flexDirection : 'column',
             justifyContent : 'center',
@@ -44,6 +44,7 @@ const useStyles = makeStyles({
         fontFamily: `'Quicksand', sans-serif`,
         border : '1px solid white',
         color : 'white',
+
     },
     rootRadio: {
         '&$checked': {
