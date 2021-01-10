@@ -57,7 +57,7 @@ function CCBox() {
                         classes={ {label : classes.labelFormControlLabelRadio} }
                     /> 
                 </RadioGroup>
-            </FormControl>
+            </FormControl> 
         </div>
     )
     return (

@@ -42,6 +42,8 @@ const useStyles = makeStyles({
         margin : '20px 10px',
         textTransform : 'none',
         fontFamily: `'Quicksand', sans-serif`,
+        border : '1px solid white',
+        color : 'white',
     },
     rootRadio: {
         '&$checked': {
