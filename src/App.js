@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div style={{backgroundImage: `url(${background})`}}>
         <Header />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL} >
           <Content />
         </BrowserRouter>
       </div>
