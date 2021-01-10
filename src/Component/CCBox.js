@@ -30,7 +30,6 @@ function CCBox(props) {
                             />} label="Male" classes={ {label : classes.labelFormControlLabelRadio} } /> 
                     </RadioGroup>
                 </FormControl> 
-
             </form>
     )
  
