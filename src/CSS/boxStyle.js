@@ -9,7 +9,7 @@ const useStyles = makeStyles({
         margin : '10px 40px',
         display : 'flex',
         flexDirection : 'column',
-        '& > form' : {
+        '&>form': {
             display : 'flex',
             flexDirection : 'column',
             justifyContent : 'center',

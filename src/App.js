@@ -8,15 +8,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <div style={{backgroundImage: `url(${background})`}}>
-        <Header />
-        <BrowserRouter basename={process.env.PUBLIC_URL} >
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
+      <div className="App">
+        <div style={{backgroundImage: `url(${background})`}}>
+          <Header />
           <Content />
-        </BrowserRouter>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
 
   );
 }

@@ -57,16 +57,16 @@ const resultBoxStyle = makeStyles({
 }) 
 
 function CCBox() {
-    
+    var cent = Math.round(Math.random()*100)
     const classes = resultBoxStyle();
     return (
         <>    
             <Paper elevation={6} classes={{ root: classes.root }} >
-                <InputLabel classes={{root : classes.rootLabel}}>67<span>%</span></InputLabel>
+                <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>
                     <span>Congratulations!</span> Aman Jat, Our Estimate is that you and miss Pooja
-                    love each other with 67% of love, but don't think much about it, you can increase 
+                    love each other with {cent}% of love, but don't think much about it, you can increase 
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
             </Paper>
