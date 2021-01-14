@@ -2,6 +2,7 @@ import React from 'react'
 import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
 import boxStyle from '../CSS/boxStyle.js'
 import { Link } from 'react-router-dom'
+import CCquicklines from './CCquicklines';
 
 function CCBox(props) {
 
@@ -35,6 +36,7 @@ function CCBox(props) {
  
     return (
         <>
+            <CCquicklines />
             <Paper elevation={6} classes={{ root: classes.root }} >
                     {dataMap}
                     <Button variant='outlined' classes={{root : classes.rootButton}}> 

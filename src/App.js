@@ -1,5 +1,5 @@
 import './App.css';
-import Content from './Component/Content.js';
+import Routing from './Component/Routing.js';
 import Footer from './Component/Footer.js';
 import Header from './Component/Header';
 import background from './Images/backimg.jpg';
@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <div style={{backgroundImage: `url(${background})`}}>
           <Header />
-          <Content />
+          <Routing />
         </div>
         <Footer />
       </div>

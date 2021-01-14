@@ -2,7 +2,8 @@ import React from 'react'
 import {Paper, Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import CCquicklines from './CCquicklines';
 
 const resultBoxStyle = makeStyles({
     root: {
@@ -61,6 +62,7 @@ function CCBox() {
     const classes = resultBoxStyle();
     return (
         <>    
+            <CCquicklines />
             <Paper elevation={6} classes={{ root: classes.root }} >
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>

@@ -1,5 +1,4 @@
 import React from 'react'
-import CCquicklines from './CCquicklines';
 import CCBox from './CCBox'
 import ResultBox from './ResultBox'
 import { Switch, Route } from 'react-router-dom'
@@ -7,11 +6,10 @@ import AboutUs from './AboutUs'
 
 const ccTop = { paddingBottom : '36px'}
 
-function Content() {
+function Routing() {
 
     return (
         <div style={ccTop} >
-            <CCquicklines />
                 <Switch>
                     <Route exact path='/' component={CCBox}/>
                     <Route path='/ccbox' component={CCBox}/>
@@ -22,4 +20,4 @@ function Content() {
     )
 }
 
-export default Content
+export default Routing
