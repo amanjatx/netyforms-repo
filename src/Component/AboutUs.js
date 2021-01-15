@@ -1,5 +1,5 @@
 import React from 'react'
-import {Paper} from '@material-ui/core'
+import {Paper, Divider} from '@material-ui/core'
 import ImageGallery from './ImageGallery'
 function AboutUs() {
     return (
@@ -7,6 +7,8 @@ function AboutUs() {
         <div style={HeadingDiv}>
             <h1>About Us</h1>
         </div>
+        
+        <Divider style={divider2}/>
         <div style={Heading2Div}>
             <h2>LoveCalcy</h2>
         </div>
@@ -17,13 +19,12 @@ function AboutUs() {
             us.</label>
         </div>
 
+        <Divider style={divider2}/>
         <div style={Heading2Div}>
             <h2>Our Team</h2>
         </div>
 
-        <ImageGallery>
-
-        </ImageGallery>
+        <ImageGallery />
     </div>
     )
 }
@@ -32,7 +33,11 @@ function AboutUs() {
 
 
 
-
+const divider2 = {
+    backgroundColor : 'white',
+    margin : '0px 40px',
+    opacity : '0.5',
+  }
 
 const GrandDiv = {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -42,7 +47,6 @@ const HeadingDiv = {
     justifyContent : 'flex-start',
     padding: '0 15%',
     alignItems : 'center',
-    fontFamily: `'Quicksand', sans-serif`,
     color : 'white'
 }
 const Heading2Div = {
