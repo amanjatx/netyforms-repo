@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Divider from '@material-ui/core/Divider';
 
-// STYLE of sidenav and TOGGLE method got as props
+
 
 const sideNavButton = {
   margin : '10px',
@@ -16,11 +17,35 @@ const sideNavButton = {
   color : 'white',
 }
 const LinkTitle = ['About Us', 'Contact Us', 'Privacy Policy', 'Map', 'Career']
-const LinkTitleMap = LinkTitle.map( (title) => 
-  <Button variant="contained" style={sideNavButton}>{title} </Button>
-)
+const data = [
+  {
+    title : 'About Us',
+    link : '/aboutus'
+  },
+  {
+    title : 'Contact Us',
+    link : '/'
+  },
+  {
+    title : 'Privacy Policy',
+    link : '',
+  },
+  {
+    title : 'Map',
+    link : '',
+  },
+  {
+    title : 'Career',
+    link : '',
+  }
+]
 
 function SideNav(props) {
+
+  const dataMap = data.map( (item) => 
+  <Button component={Link} to={item.link} variant="contained" onClick={props.toggle} style={sideNavButton}>{item.title} </Button>
+  )
+
   return (
     <div style={props.styleprop}>
       <div> 
@@ -30,7 +55,7 @@ function SideNav(props) {
           </Button>
       </div>
       <Divider style={divider}/>
-        <div style={optionsStyle}>{LinkTitleMap}</div> 
+        <div style={optionsStyle}>{dataMap}</div> 
       <Divider style={divider2}/>
         <div style={logoDiv}> Lovecalcy </div>
         <div style={bottomLine}> &copy; 2020</div>
