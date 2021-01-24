@@ -30,10 +30,10 @@ function SideNav(props) {
           </Button>
       </div>
       <Divider style={divider}/>
-      <div style={optionsStyle}>{LinkTitleMap}</div> 
+        <div style={optionsStyle}>{LinkTitleMap}</div> 
       <Divider style={divider2}/>
-      <div style={logoDiv}> Lovecalcy </div>
-      <div style={bottomLine}> &copy; 2020</div>
+        <div style={logoDiv}> Lovecalcy </div>
+        <div style={bottomLine}> &copy; 2020</div>
     </div>
   )
 }
