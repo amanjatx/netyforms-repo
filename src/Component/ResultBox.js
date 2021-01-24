@@ -5,6 +5,18 @@ import InputLabel from '@material-ui/core/InputLabel';
 // import { Link } from 'react-router-dom'
 import CCquicklines from './CCquicklines';
 
+
+import {connect} from 'react-redux'
+
+const mapStateToProps = state => {
+    return {
+        name : state.name
+        // name1 : state[0].name,
+        // gen1 : state[0].gender,
+        // name2 : state[1].name,
+        // gen2 : state[1].gender,
+    }
+}
 const resultBoxStyle = makeStyles({
     root: {
         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -57,22 +69,21 @@ const resultBoxStyle = makeStyles({
     },
 }) 
 
-function CCBox() {
+const ResultBox = (props) =>  {
     var cent = Math.round(Math.random()*100)
     const classes = resultBoxStyle();
     return (
-        <>    
+        <>
             <CCquicklines />
             <Paper elevation={6} classes={{ root: classes.root }} >
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>
-                    <span>Congratulations!</span> Aman Jat, Our Estimate is that you and miss Pooja
-                    love each other with {cent}% of love, but don't think much about it, you can increase 
+                    <span>Congratulations!</span> {props.gen1=='male' ? 'Mr.' : 'Miss'} {props.name}, Our Estimate is that you and {props.gen2=='male' ? 'Mr.' : 'Miss'} {props.name2}                     love each other with {cent}% of love, but don't think much about it, you can increase 
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
-            </Paper>
-        </> 
+            </Paper> 
+        </>
     )
 }
-export default CCBox
+export default connect(mapStateToProps)(ResultBox)
