@@ -9,12 +9,12 @@ import {connect} from 'react-redux'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        changeName1 : () => {
+        changeName1 : (name1) => {
             dispatch ({
                 type : 'CHANGE_NAME1',
-                payload : 'arpit'
+                payload : name1,
             })
-        }
+        },
     }
 } 
 function CCBox(props) {
@@ -61,7 +61,7 @@ function CCBox(props) {
     
 
     const run = () => {
-    //   props.changeName1(name1)
+      props.changeName1(name1)
     }
     return (
         <>
