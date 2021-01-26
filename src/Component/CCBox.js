@@ -9,29 +9,27 @@ import {connect} from 'react-redux'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        changeName1 : (name1) => {
+        insertInfo : (name1,gen1,name2,gen2) => {
             dispatch ({
-                type : 'CHANGE_NAME1',
-                payload : name1,
+                type : 'INSERT_INFO',
+                payload_name1 : name1,
+                payload_gen1 : gen1,
+                payload_name2 : name2,
+                payload_gen2 : gen2,
             })
         },
     }
 } 
 function CCBox(props) {
 
-    const [value1, setValue1] = React.useState('female');
+    const [gen1, setValue1] = React.useState('female');
     const handleChange1 = (event) => setValue1(event.target.value); 
-    const [value2, setValue2] = React.useState('female');
-    const handleChange2 = (event) => setValue2(event.target.value); 
 
-    const classes = boxStyle();
-    const data = [
-        { title : 'Your Name', name : 'name1', radioGroupName : 'genderf1', al : 'gender', val : value1, method : handleChange1, },
-        { title : 'Your Crush Name', name : 'name2', radioGroupName : 'genderf2', al : 'gender', val : value2, method : handleChange2,},
-    ]
-    var [name1, setName1] = React.useState('Hello');
-    var [name2, setName2] = React.useState('');
+    const [gen2, setValue2] = React.useState('female');
+    const handleChange2 = (event) => setValue2(event.target.value); 
     
+    const [name1, setName1] = React.useState('');
+    const [name2, setName2] = React.useState('');
     const takeData = (event) => {
         if(event.target.id=='name1') {
             setName1(event.target.value)
@@ -40,6 +38,13 @@ function CCBox(props) {
             setName2(event.target.value)
         }
     }
+
+    const classes = boxStyle();
+    
+    const data = [
+        { title : 'Your Name', name : 'name1', radioGroupName : 'genderf1', al : 'gender', val : gen1, method : handleChange1, },
+        { title : 'Your Crush Name', name : 'name2', radioGroupName : 'genderf2', al : 'gender', val : gen2, method : handleChange2,},
+    ]
     const dataMap = data.map( (dal) =>
             <form>
                 <FormControl>
@@ -61,7 +66,7 @@ function CCBox(props) {
     
 
     const run = () => {
-      props.changeName1(name1)
+      props.insertInfo(name1,gen1,name2,gen2)
     }
     return (
         <>

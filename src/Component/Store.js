@@ -1,29 +1,15 @@
 import {createStore} from 'redux'
 
-// const formData = [
-//     {
-//         name : 'Aman jat',
-//         gender : 'male'
-//     },
-//     {
-//         name : 'Ravina',
-//         gender : 'female'
-//     }
-// ]
+const info1 = { name : 'aman jat', gen :'male' };
 
-const formData = {
-    name : 'Aman Jat'
-}
 
-const reducer = (state=formData,action) => {
-  if(action.type=='CHANGE_NAME1') {
-      return {
-        //   ...state,
-          name : action.payload
-      }
+const reducer = (state=info1,action) => {
+  if(action.type=='INSERT_INFO') {
+    return {
+        ...state, 
+        name : action.payload_name1
+    }
   }
-  else 
-    return state
 }
 
 const store = createStore(reducer)
