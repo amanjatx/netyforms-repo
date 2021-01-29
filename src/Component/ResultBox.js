@@ -10,11 +10,10 @@ import {connect} from 'react-redux'
 
 const mapStateToProps = state => {
     return {
-        name : state.name,
-        gen : state.gen
-        // gen1 : state[0].gender,
-        // name2 : state[1].name,
-        // gen2 : state[1].gender,
+        name1 : state.info1.name,
+        gen1 : state.info1.gender,
+        name2 : state.info2.name,
+        gen2 : state.info2.gender,
     }
 }
 const resultBoxStyle = makeStyles({
@@ -79,10 +78,8 @@ const ResultBox = (props) =>  {
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>
-                    <span>Congratulations!</span> {props.gen=='male' ? 'Mr.' : 'Miss'} {props.name}, Our 
-                    Estimate is that you and you're crush 
-                    {/* {props.gen2=='male' ? 'Mr.' : 'Miss'} {props.name2}  */}
-                    love each other with {cent}% of love, but don't think much about it, you can increase 
+                    <span>Congratulations!</span> {props.gen1=='male' ? 'Mr.' : 'Miss'} {props.name1}, Our 
+                    Estimate is that you and {props.gen2=='male' ? 'Mr.' : 'Miss'} {props.name2} love each other with {cent}% of love, but don't think much about it, you can increase 
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
             </Paper> 
