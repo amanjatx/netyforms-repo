@@ -7,29 +7,39 @@
     padding: 5px;
     font-size: 30px;
   }
-  .footerLinks {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footerLinks > p {
-    margin: 2% auto;
-    padding: 5px;
-  }
 
-  .HeaderDiv {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center; /*vertically align*/
-    height: 50px;
-  }
-  .HeaderDiv > div {
-    width: 30%;
-    margin : 0 5px;
-  }
+.aboutUsDiv {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
 
-  .QuicklinesDiv {
-    display : flex;
-    flex-direction: column;
-    padding-top: 6%;
-  }
+.divider2 {
+    background-color: white;
+    margin : 0px 40px;
+    opacity : 0.5;
+}
+
+.asHeadingDiv {
+    display: flex;
+    justify-content: flex-start;
+    padding : 0 15%;
+    align-items: center ;
+    color : white;
+}
+.asHeading2Div {
+    display: flex;
+    justify-content: flex-start;
+    padding : 0 7%;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color : #333333;
+}
+
+.labelDiv {
+    display: flex;
+    justify-content: flex-start;
+    padding : 12px;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    color : whitesmoke;
+}

@@ -1,15 +1,13 @@
 import React from 'react'
 import CCBox from './CCBox'
 import ResultBox from './ResultBox'
-import { Switch, Route } from 'react-router-dom'
 import AboutUs from './AboutUs'
-
-const ccTop = { paddingBottom : '36px'}
+import styles from '../CSS/content.module.css'
+import { Switch, Route } from 'react-router-dom'
 
 function Routing() {
-
     return (
-        <div style={ccTop} >
+        <div className={styles.ccTop} >
                 <Switch>
                     <Route exact path='/' component={CCBox}/>
                     <Route path='/ccbox' component={CCBox}/>

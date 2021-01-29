@@ -1,58 +1,48 @@
 import React from 'react'
-import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
-import boxStyle from '../CSS/boxStyle.js'
-import { Link } from 'react-router-dom'
 import CCquicklines from './CCquicklines';
+import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
+import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
-
-
+import boxStyle from '../CSS/boxStyle.js'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        insertInfo : (name1,gen1,name2,gen2) => {
+        insertInfo : (n1,g1,n2,g2) => {
             dispatch ({
                 type : 'INSERT_INFO',
-                payload_name1 : name1,
-                payload_gen1 : gen1,
-                payload_name2 : name2,
-                payload_gen2 : gen2,
+                payload_name1 : n1,
+                payload_name2 : n2,
+                payload_gen1 : g1,
+                payload_gen2 : g2,
             })
         },
     }
 } 
 function CCBox(props) {
 
-    const [gen1, setValue1] = React.useState('female');
-    const handleChange1 = (event) => setValue1(event.target.value); 
+    const [g1, setG1] = React.useState('female');
+    const [g2, setG2] = React.useState('female');
+    const [n1, setN1] = React.useState('');
+    const [n2, setN2] = React.useState('');
 
-    const [gen2, setValue2] = React.useState('female');
-    const handleChange2 = (event) => setValue2(event.target.value); 
-    
-    const [name1, setName1] = React.useState('');
-    const [name2, setName2] = React.useState('');
-    const takeData = (event) => {
-        if(event.target.id=='name1') {
-            setName1(event.target.value)
-        }
-        if(event.target.id=='name2') {
-            setName2(event.target.value)
-        }
-    }
+    const set_setG1 = (e) => setG1(e.target.value); 
+    const set_setG2 = (e) => setG2(e.target.value); 
+    const changeState = (e) => e.target.id=='n1' ? setN1(e.target.value) : setN2(e.target.value)
 
     const classes = boxStyle();
     
     const data = [
-        { title : 'Your Name', name : 'name1', radioGroupName : 'genderf1', al : 'gender', val : gen1, method : handleChange1, },
-        { title : 'Your Crush Name', name : 'name2', radioGroupName : 'genderf2', al : 'gender', val : gen2, method : handleChange2,},
+        { title : 'Your Name', name : 'n1', radioName : 'genderf1', al : 'gender', val : g1, method : set_setG1, },
+        { title : 'Your Crush Name', name : 'n2', radioName : 'genderf2', al : 'gender', val : g2, method : set_setG2,},
     ]
-    const dataMap = data.map( (dal) =>
+    const dataMap = data.map( item =>
             <form>
                 <FormControl>
-                    <Input onChange={takeData} id={dal.name} name={dal.name} placeholder={dal.title} classes={{ underline : classes.input}}/>
+                    <Input onChange={changeState} id={item.name} name={item.name} placeholder={item.title} classes={{ underline : classes.input}}/>
                 </FormControl> 
 
                 <FormControl>
-                    <RadioGroup aria-label={dal.al} name={dal.radioGroupName} value={dal.val} onChange={dal.method} classes={{root : classes.rootRadioGroup}}>
+                    <RadioGroup aria-label={item.al} name={item.radioName} value={item.val} onChange={item.method} classes={{root : classes.rootRadioGroup}}>
                         <FormControlLabel value="female" control={<Radio size='small' color='primary' 
                             classes={{ root: classes.rootRadio, checked: classes.checked, }}
                             />} label="Female" classes={{label : classes.labelFormControlLabelRadio}} /> 
@@ -64,16 +54,12 @@ function CCBox(props) {
             </form>
     )
     
-
-    const run = () => {
-      props.insertInfo(name1,gen1,name2,gen2)
-    }
     return (
         <>
             <CCquicklines />
             <Paper elevation={6} classes={{ root: classes.root }} >
                     {dataMap}
-                    <Button onClick={run} component={Link}  to='/resultBox' variant='outlined' classes={{root : classes.rootButton}}> 
+                    <Button onClick={props.insertInfo(n1,g1,n2,g2)} component={Link}  to='/resultBox' variant='outlined' classes={{root : classes.rootButton}}> 
                         Calculate
                     </Button>
             </Paper>

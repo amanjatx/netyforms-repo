@@ -9,19 +9,17 @@ const useStyles = makeStyles({
             color : 'red',
             backgroundColor :'white'
         },
-
         backgroundColor : 'transparent',
     }
 })
 
 function BtnMenu(props) {
     const classes = useStyles();
-
     return (
         <>
-        <Button variant="contained" classes={{ root : classes.rootBtn}} onClick={props.toggle}>
-            <MenuRoundedIcon />
-        </Button> 
+            <Button variant="contained" classes={{ root : classes.rootBtn}} onClick={props.toggle}>
+                <MenuRoundedIcon />
+            </Button> 
         </>
     )
 }

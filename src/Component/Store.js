@@ -5,7 +5,7 @@ const info = {
         name : 'Aman Jat',
         gender : 'male'
     },
-    info2 : {
+    info2 : { 
         name : 'Raveena',
         gender : 'female'
     }

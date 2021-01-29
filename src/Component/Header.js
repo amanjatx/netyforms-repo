@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../CSS/style.module.css'
+import styles from '../CSS/header.module.css'
 import SideNav from './SideNav.js';
 import BtnMenu from './BtnMenu';
 import { Link } from 'react-router-dom'
@@ -20,13 +20,14 @@ function Header() {
         changeState(sideNavState==='close' ? 'open' : 'close')
     }
     return (
-        <>
- {/* <SideNav styleprop={sideNav} toggle={toggle}  /> */}
-
+        <> 
+        {/* <SideNav styleprop={sideNav} toggle={toggle}  /> */}
         <div className={styles.HeaderDiv}>
-            <div> <BtnMenu toggle={toggle}/> </div>
-            <div style={logoDiv}>
-                <Link to='/' style={{textDecoration : 'none'}}>LoveCalcy</Link>
+            <div> 
+                <BtnMenu toggle={toggle}/> 
+            </div>
+            <div className={styles.logoDiv}>
+                <Link to='/' className={styles.link}>LoveCalcy</Link>
             </div>
         </div>
         </>
@@ -34,12 +35,3 @@ function Header() {
 }
 
 export default Header
-
-const logoDiv = {
-    fontFamily: "'Permanent Marker', cursive",
-    display : 'flex',
-    justifyContent : 'center',
-    fontSize : '130%', 
-    color : '#333333',
-}
-
