@@ -6,10 +6,10 @@ const ccQuickLine1 = {
     margin : '2px 0px',
     fontSize : "25px",
     fontFamily: "'Pacifico', cursive",
-    color : '#E84F69'  //#ff00ff
+    color : '#ff00ff'  //#ff00ff
 }
 const ccQuickLine2 = { 
-    textAlign : "center", 
+    textAlign : "center",             
     margin : '2px 0px',
     fontSize : "13px", 
     fontFamily: "'Open Sans', sans-serif", 

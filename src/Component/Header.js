@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import styles from '../CSS/style.module.css'
-import avatar from '../Images/avatar.png'
 import SideNav from './SideNav.js';
 import BtnMenu from './BtnMenu';
 
 
-function Header2() {
+function Header() {
     const [sideNavState, changeState] = useState('close');
     const sideNav = {
         color : 'white',
-        backgroundColor : '#F59BAA',  //#282828
+        backgroundColor : '#282828',
         position : 'fixed',
         zIndex : '2',
         width: sideNavState==='close' ? '0%' : '100%',
@@ -24,18 +23,17 @@ function Header2() {
     return (
         <>
         
-
+        <SideNav styleprop={sideNav} toggle={toggle}  />
         <div className={styles.HeaderDiv}>
             <div> <BtnMenu toggle={toggle}/> </div>
-            <div style={logoDiv}>Love<span>Calcy</span></div>
+            <div style={logoDiv}>LoveCalcy</div>
             {/* <div style={avatarDiv}> <img src={avatar} height={'35px'} alt='avatar icon'></img> </div> */}
         </div>
-        <SideNav styleprop={sideNav} toggle={toggle}  />
         </>
     )
 }
 
-export default Header2
+export default Header
 
 const logoDiv = {
     fontFamily: "'Permanent Marker', cursive",

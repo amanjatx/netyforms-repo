@@ -1,22 +1,19 @@
 import './App.css';
 import Content from './Component/Content.js';
 import Footer from './Component/Footer.js';
-import Header2 from './Component/Header2';
-import BoxOuter from './Component/BoxOuter';
 // import ContentDetail from './Component/ContentDetail';
+import Header from './Component/Header';
 import background from './Images/backimg.jpg';
-// import Rough2 from './Component/Rough2.js';
+import ContactPage from './Component/ContactPage';
 
 function App() {
   return (
-    <div className="App" style={{backgroundImage: `url(${background})`}}>
-      <div>
-      <Header2 />
-      <Content />
     
+    <div className="App">
+      <div style={{backgroundImage: `url(${background})`}}>
+        <Header />
+        <Content  />
       </div>
-      {/* <ContentDetail /> */}
-      {/* <Rough2 /> */}
       <Footer />
     </div>
 

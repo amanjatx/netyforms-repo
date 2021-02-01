@@ -1,20 +1,20 @@
 import React from 'react'
-import BoxOuter from './BoxOuter';
 import CCquicklines from './CCquicklines';
+import CCBox from './CCBox'
+import ContactPage from './ContactPage';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-const contentStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent : 'center'
 
+const ccTop = { 
+    paddingBottom : '36px',
 }
 
 function Content() {
     return (
-        <div style={contentStyle}>
-            <CCquicklines />
-            <BoxOuter />
+        <div style={ccTop}>
+           <ContactPage />
         </div>
+
     )
 }
 
