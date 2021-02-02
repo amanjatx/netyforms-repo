@@ -1,13 +1,20 @@
 import React from 'react'
-import styles from '../CSS/style.module.css';
-import Link from '@material-ui/core/Link';
+import styles from '../CSS/footer.module.css';
+import { Link } from 'react-router-dom'
+import Button from '@material-ui/core/Button'
 
 function FooterLinks() {
     return (
-        <div className={styles.footerLinks}>
-            <Link color="grey">About Us</Link>
-            <Link color="grey">Contact Us</Link>
-            <Link color="grey">Privacy Policy</Link>
+        <div className={styles.links}>
+            <Button component={Link}  to='/aboutus' > 
+                About Us
+            </Button>
+            <Button component={Link}  to='/aboutus' > 
+                Contact Us
+            </Button>
+            <Button component={Link}  to='/aboutus' > 
+                Privacy Policy
+            </Button>
         </div>
     )
 }
