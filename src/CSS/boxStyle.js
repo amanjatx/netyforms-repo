@@ -2,15 +2,14 @@ import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',       //FF8E53 //EB7A99
-         borderRadius: 8,
-         border: 0,
-         padding: '20px 20px',
-         margin : '10px 40px',
-         display: 'flex',
-         flexDirection: 'column',
-        overflow: 'hidden',
-        '& > div' : {
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        borderRadius: 8,
+        border: 0,
+        padding: '20px 30px',
+        margin : '10px 40px',
+        display : 'flex',
+        flexDirection : 'column',
+        '&>form': {
             display : 'flex',
             flexDirection : 'column',
             justifyContent : 'center',
@@ -44,8 +43,9 @@ const useStyles = makeStyles({
         margin : '20px 10px',
         textTransform : 'none',
         fontFamily: `'Quicksand', sans-serif`,
-        color: '#ffff',
-        border: ' 2px solid #ffff'
+        border : '1px solid white',
+        color : 'white',
+
     },
     rootRadio: {
         '&$checked': {

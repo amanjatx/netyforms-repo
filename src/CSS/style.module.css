@@ -7,67 +7,39 @@
     padding: 5px;
     font-size: 30px;
   }
-  .footerLinks {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footerLinks > p {
-    margin: 2% auto;
-    padding: 5px;
-  }
 
-  .HeaderDiv {
-    background-color: transparent;  
-    display: flex;
-    flex-direction: row;
-    align-items: center; /*vertically align*/
-    height: 50px;
-  }
-  .HeaderDiv > div {
-    width: 30%;
-    margin : 0 5px;
-  }
+.aboutUsDiv {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
 
-   /* Box Outer Starts from heres  */
-  .boxOuterDiv {
-    background-color: rgb(255, 129, 150);
-    border-radius: 8px;
-    color : black;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin : 20px 50px 0 50px;
-    padding-bottom : 18px;
-  }
-  
-  .formDiv {
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgb(100, 247, 2); */
-  }
-  .formDiv > div {
-    /* background-color: tomato; */
-    margin : 0px;
-  }
-  .radioGroupDiv {
+.divider2 {
+    background-color: white;
+    margin : 0px 40px;
+    opacity : 0.5;
+}
+
+.asHeadingDiv {
     display: flex;
-    flex-direction: row !important;
-  }
-  .radioGroupDiv > div > label {
-    color :#333333;
-    font-size : 900px !important;
-  }
-  .radioLabel { 
-    /* background-color: red; */
-  }
-  .radioLabel > label  {
-    /* background-color: seagreen !important; */
-    /* color : white !important; */
+    justify-content: flex-start;
+    padding : 0 15%;
+    align-items: center ;
+    color : white;
+}
+.asHeading2Div {
+    display: flex;
+    justify-content: flex-start;
+    padding : 0 7%;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color : #333333;
+}
+
+.labelDiv {
+    display: flex;
+    justify-content: flex-start;
+    padding : 12px;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
     font-size: 90%;
-  }
-  .radioLabel > div > input:focus {
-    color : green !important;
-  }
+    color : whitesmoke;
+}

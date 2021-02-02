@@ -82,7 +82,6 @@ function ContactPage() {
         case 'visit': return <div>{setContactData(conDataArr[0]) }</div> 
         case 'call' : return <div>{setContactData(conDataArr[1]) } </div>
         case 'email' : return <div>{setContactData(conDataArr[2])}</div>
-
       }
        }
     else

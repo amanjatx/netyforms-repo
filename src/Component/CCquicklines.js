@@ -1,27 +1,12 @@
 import React from 'react'
+import styles from '../CSS/content.module.css'
 
-const ccQuickLinesDiv = {display: 'flex', flexDirection: 'column', paddingTop : '6%'}
-const ccQuickLine1 = { 
-    textAlign : "center", 
-    margin : '2px 0px',
-    fontSize : "25px",
-    fontFamily: "'Pacifico', cursive",
-    color : '#ff00ff'  //#ff00ff
-}
-const ccQuickLine2 = { 
-    textAlign : "center",             
-    margin : '2px 0px',
-    fontSize : "13px", 
-    fontFamily: "'Open Sans', sans-serif", 
-    opacity : '0.7',
-    color : '#DE667B'
-}
 
 function CCquicklines() {
     return (
-            <div style={ccQuickLinesDiv}>
-                <p style={ccQuickLine1} >Check Your Love Percentage</p>
-                <p style={ccQuickLine2}>"but something can never be calculated"</p>
+            <div className={styles.lineDiv}>
+                <p className={styles.line1}>Check Your Love Percentage</p>
+                <p className={styles.line2}><q>but something can never be calculated</q></p>
             </div>
     )
 }
