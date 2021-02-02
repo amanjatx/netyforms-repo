@@ -9,7 +9,7 @@ function FooterLinks() {
             <Button component={Link}  to='/aboutus' > 
                 About Us
             </Button>
-            <Button component={Link}  to='/aboutus' > 
+            <Button component={Link}  to='/contactus' > 
                 Contact Us
             </Button>
             <Button component={Link}  to='/aboutus' > 
