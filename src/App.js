@@ -1,19 +1,26 @@
 import './App.css';
-import Header from './Component/Header.js';
-import Content from './Component/Content.js';
+import Routing from './Component/Routing.js';
 import Footer from './Component/Footer.js';
-
+// import ContentDetail from './Component/ContentDetail';
+import Header from './Component/Header';
+import background from './Images/backimg.jpg';
+import { HashRouter } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+    <HashRouter basename={process.env.PUBLIC_URL} >
+      <div className="App">
+        <div style={{backgroundImage: `url(${background})`}}>
+          <Header />
+          <Routing />
+        </div>
+        <Footer />
+      </div>
+    </HashRouter>
 
   );
 }
 
-export default App;
+
+export default App

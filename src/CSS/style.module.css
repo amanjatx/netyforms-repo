@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .headerClass {
 
       display:flex;
@@ -29,24 +30,50 @@
     padding : 10px;
     color : rgb(44, 44, 44);
 }
+=======
+>>>>>>> 0741763f57f0932a716d10b8b389d44533a1d775
 .flexContainerIcons {
     display: flex;
-    /* background-color: blue; */
     justify-content : center;
 }
 .flexContainerIcons > div {
-    /* background-color: #fd0000; */
     margin: 5px 4%;
     padding: 5px;
     font-size: 30px;
   }
-  .footerLinks {
+
+.aboutUsDiv {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+.divider2 {
+    background-color: white;
+    margin : 0px 40px;
+    opacity : 0.5;
+}
+
+.asHeadingDiv {
     display: flex;
-    /* background-color: blue; */
-    justify-content: space-evenly;
-  }
-  .footerLinks > p {
-    /* background-color: #fd0000; */
-    margin: 2% auto;
-    padding: 5px;
-  }
+    justify-content: flex-start;
+    padding : 0 15%;
+    align-items: center ;
+    color : white;
+}
+.asHeading2Div {
+    display: flex;
+    justify-content: flex-start;
+    padding : 0 7%;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color : #333333;
+}
+
+.labelDiv {
+    display: flex;
+    justify-content: flex-start;
+    padding : 12px;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    color : whitesmoke;
+}

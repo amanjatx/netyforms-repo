@@ -1,15 +1,17 @@
 import React from 'react'
-import styles from '../CSS/style.module.css';
 import FooterIcons from './FooterIcons.js'
 import FooterLinks from './FooterLinks.js'
+import styles from '../CSS/footer.module.css'
+
 function Footer() {
     return (
-        <div className={styles.footerClass}>
+        <div className={styles.footerDiv}>
             <FooterIcons />
-            <hr></hr> {/* for a grey horizontal line */}
+                <hr></hr> {/* for a grey horizontal line */}
             <FooterLinks />
         </div>
     )
 }
 
 export default Footer
+
