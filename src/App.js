@@ -1,6 +1,7 @@
 import './App.css';
 import Routing from './Component/Routing.js';
 import Footer from './Component/Footer.js';
+// import ContentDetail from './Component/ContentDetail';
 import Header from './Component/Header';
 import background from './Images/backimg.jpg';
 import { HashRouter } from 'react-router-dom';
@@ -21,4 +22,5 @@ function App() {
   );
 }
 
-export default App;
+
+export default App
