@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/netyforms-repo/static/css/main.597a8606.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.c8f86d3b.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.c8f86d3b.chunk.js.map",
-    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.6e328d84.js",
-    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.6e328d84.js.map",
-    "static/js/2.8fb15a85.chunk.js": "/netyforms-repo/static/js/2.8fb15a85.chunk.js",
-    "static/js/2.8fb15a85.chunk.js.map": "/netyforms-repo/static/js/2.8fb15a85.chunk.js.map",
-    "static/js/3.fce84e34.chunk.js": "/netyforms-repo/static/js/3.fce84e34.chunk.js",
-    "static/js/3.fce84e34.chunk.js.map": "/netyforms-repo/static/js/3.fce84e34.chunk.js.map",
+    "main.js": "/netyforms-repo/static/js/main.94381aa4.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.94381aa4.chunk.js.map",
+    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.2a92e864.js",
+    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.2a92e864.js.map",
+    "static/js/2.c7f159ce.chunk.js": "/netyforms-repo/static/js/2.c7f159ce.chunk.js",
+    "static/js/2.c7f159ce.chunk.js.map": "/netyforms-repo/static/js/2.c7f159ce.chunk.js.map",
+    "static/js/3.133d5edf.chunk.js": "/netyforms-repo/static/js/3.133d5edf.chunk.js",
+    "static/js/3.133d5edf.chunk.js.map": "/netyforms-repo/static/js/3.133d5edf.chunk.js.map",
     "index.html": "/netyforms-repo/index.html",
     "static/css/main.597a8606.chunk.css.map": "/netyforms-repo/static/css/main.597a8606.chunk.css.map",
-    "static/js/2.8fb15a85.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.8fb15a85.chunk.js.LICENSE.txt",
+    "static/js/2.c7f159ce.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.c7f159ce.chunk.js.LICENSE.txt",
     "static/media/amanjat.10887b85.jpg": "/netyforms-repo/static/media/amanjat.10887b85.jpg",
     "static/media/backimg.828dfb12.jpg": "/netyforms-repo/static/media/backimg.828dfb12.jpg",
     "static/media/jass.6a8bf4ef.jpg": "/netyforms-repo/static/media/jass.6a8bf4ef.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e328d84.js",
-    "static/js/2.8fb15a85.chunk.js",
+    "static/js/runtime-main.2a92e864.js",
+    "static/js/2.c7f159ce.chunk.js",
     "static/css/main.597a8606.chunk.css",
-    "static/js/main.c8f86d3b.chunk.js"
+    "static/js/main.94381aa4.chunk.js"
   ]
 }
