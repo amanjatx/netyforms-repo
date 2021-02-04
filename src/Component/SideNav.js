@@ -16,7 +16,7 @@ const sideNavButton = {
   backgroundColor : 'transparent',
   color : 'white',
 }
-const LinkTitle = ['About Us', 'Contact Us', 'Privacy Policy', 'Map', 'Career']
+// const LinkTitle = ['About Us', 'Contact Us', 'Privacy Policy', 'Map', 'Career']
 const data = [
   {
     title : 'About Us',

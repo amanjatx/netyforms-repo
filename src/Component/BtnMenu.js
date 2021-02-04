@@ -17,7 +17,7 @@ function BtnMenu(props) {
     const classes = useStyles();
     return (
         <>
-            <Button variant="contained" classes={{ root : classes.rootBtn}} onClick={props.toggle}>
+            <Button title='Side Navigation' variant="contained" classes={{ root : classes.rootBtn}} onClick={props.toggle}>
                 <MenuRoundedIcon />
             </Button> 
         </>

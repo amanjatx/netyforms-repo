@@ -56,16 +56,16 @@ function ContactPage() {
     
     const data = [
         {
-            title : 'Your Name', name : 'name1',
+            title : 'Your Name', name : 'name1', key : 1
         },
         {
-            title : 'Your email', name : 'name2',
+            title : 'Your email', name : 'name2', key : 2
         },
     ]
 
     
     const dataMap = data.map( (dal) =>
-            <div className="formDiv">
+            <div className="formDiv" key={dal.key}>
             <FormControl>
                 <Input id={dal.name} name={dal.name} placeholder={dal.title} onChange={dal.method2} classes={{ underline : classes.input}}/>
             </FormControl> 
@@ -82,6 +82,7 @@ function ContactPage() {
         case 'visit': return <div>{setContactData(conDataArr[0]) }</div> 
         case 'call' : return <div>{setContactData(conDataArr[1]) } </div>
         case 'email' : return <div>{setContactData(conDataArr[2])}</div>
+        default : return <div></div>
       }
        }
     else
@@ -112,7 +113,7 @@ function ContactPage() {
                 <p style={conDataPara}>{contactData}</p>
                 {dataMap}
                 <div style={{display: 'flex', justifyContent:'center'}}>
-                <Button variant='outlined' classes={{root : classes.rootButton}}>submit</Button>
+                <Button title='Submit Your Info' variant='outlined' classes={{root : classes.rootButton}}>submit</Button>
                 </div>
         </div>  
         

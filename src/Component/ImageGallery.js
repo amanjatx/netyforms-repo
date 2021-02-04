@@ -53,8 +53,8 @@ function ImageGallery() {
     return (
     <div style={ImageDiv}>
         <div style={ImageDivInner}>
-            <Button onClick={prevIndex} style={{color: 'white'}} disableFocusRipple='true'><ArrowBackIosRoundedIcon/></Button>
-            <img src={data[index].src} height="300" width='250' style={imageStyle}></img>
+            <Button onClick={prevIndex} style={{color: 'white'}} disableFocusRipple={true}><ArrowBackIosRoundedIcon/></Button>
+            <img src={data[index].src} height="300" width='250' style={imageStyle} alt={data[index].name}></img>
             <Button onClick={nextIndex} style={{color: 'white'}}><ArrowForwardIosRoundedIcon/></Button>
         </div>
         <label style={labelPost}>{data[index].post}</label>

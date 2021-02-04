@@ -75,8 +75,8 @@ const ResultBox = (props) =>  {
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>
-                    <span>Congratulations!</span> {props.g1=='male' ? 'Mr.' : 'Miss'} {props.n1}, Our 
-                    Estimate is that you and {props.g2=='male' ? 'Mr.' : 'Miss'} {props.n2} love each other with {cent}% of love, but don't think much about it, you can increase 
+                    <span>Congratulations!</span> {props.g1==='male' ? 'Mr.' : 'Miss'} {props.n1}, Our 
+                    Estimate is that you and {props.g2==='male' ? 'Mr.' : 'Miss'} {props.n2} love each other with {cent}% of love, but don't think much about it, you can increase 
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
             </Paper> 
