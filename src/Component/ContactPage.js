@@ -1,5 +1,5 @@
 import React from 'react' 
-import { Paper, Button, FormControl, Input} from '@material-ui/core'
+import { Button, FormControl, Input} from '@material-ui/core'
 import Icon from './Icon';
 import {makeStyles} from '@material-ui/core/styles';  
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
             display : 'flex',
             flexDirection : 'column',
             justifyContent : 'center',
-            alignItems : 'center',
+            alignItems : '',
             padding : '20px 10px',
             margin : '5px 0',                 
             color: '#ffff',
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
       textTransform : 'none',
       fontFamily: `'Quicksand', sans-serif`,
       color: '#ffff',
-      border: ' 2px solid #ffff',
+      border: ' 1px solid #ffff',
       padding: '7px 30px'
   },
   })
