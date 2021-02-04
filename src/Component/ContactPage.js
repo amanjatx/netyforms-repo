@@ -31,7 +31,7 @@ const useStyles = makeStyles({
         fontFamily: `'Quicksand', sans-serif`,
     },
     rootButton : {
-      margin : '20px 10px',
+      marginBottom: '0px',
       textTransform : 'none',
       fontFamily: `'Quicksand', sans-serif`,
       color: '#ffff',
@@ -98,6 +98,7 @@ function ContactPage() {
       textAlign: 'center',
       maxWidth: paraState==="hide" ? "0px" : '700px',
       opacity: paraState==="hide" ? '0' : '1',
+      visibility: paraState==="hide" ? 'hidden' : 'visible',
       transition: '0.5s',
         }
 

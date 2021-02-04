@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import {Paper, Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -65,13 +65,35 @@ const resultBoxStyle = makeStyles({
     },
 }) 
 
+var cent = Math.round(Math.random()*100)
+ const GIFarr = [
+    "https://giphy.com/embed/kBlaBqkV2cZ8TfgLaq",
+    "https://giphy.com/embed/QTfVi01W3PJvmOXwMs",
+    "https://giphy.com/embed/VgU9D8avczJWJi08dT"
+ ]
+
+  
+
 const ResultBox = (props) =>  {
-    var cent = Math.round(Math.random()*100)
+    const [index, setIndex] = React.useState("");
     const classes = resultBoxStyle();
+     
+    useEffect(() => {
+        if(cent<=30)
+            {  setIndex('0')  }
+        else if (cent<=60)
+            { setIndex('1');}
+        else
+            { setIndex('2');}
+},[])
+
     return (
         <>
             <CCquicklines />
             <Paper elevation={6} classes={{ root: classes.root }} >
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+            <iframe src={GIFarr[index]} width="280" 
+            height="170" frameBorder="0"></iframe></div>
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>

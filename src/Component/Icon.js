@@ -7,7 +7,7 @@ import { makeStyles} from '@material-ui/core/styles';
 const useStyles = makeStyles({
     locationIcon : {
         color: 'rgba(255, 51, 133, 1)',
-        fontSize: '3rem',
+        fontSize: '2rem',
         '&:hover:not(.Mui.disabled)' : {
             color: 'rgba(255, 51, 133, 1)'
         },
@@ -37,17 +37,16 @@ function Icon (props) {
         <div style={iconDiv}>
 
               <div><LocationOnIcon  className={classes.locationIcon}  onClick={() => props.handler(visit)} />
-                 <p style={{marginTop: '5px'}}>Visit Us</p>
+                 <p style={{marginTop: '5px', fontSize: '12px'}}>Visit Us</p>
               </div>
 
               <div><LocalPhoneRoundedIcon className={classes.locationIcon} onClick={() => props.handler(call)} />
-                 <p style={{marginTop: '5px'}}>Call Us</p>
+                 <p style={{marginTop: '5px', fontSize: '12px'}}>Call Us</p>
               </div>
 
               <div><MailOutlineRoundedIcon className={classes.locationIcon}  onClick={() => props.handler(email)}/>
-                 <p style={{marginTop: '5px'}}>Email Us</p>
-              </div>
-
+                 <p style={{marginTop: '5px', fontSize: '12px'}}>Email Us</p>
+               </div>
          </div>
     )
 }
