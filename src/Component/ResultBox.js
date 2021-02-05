@@ -67,9 +67,9 @@ const resultBoxStyle = makeStyles({
 
 var cent = Math.round(Math.random()*100)
  const GIFarr = [
-    "https://giphy.com/embed/kBlaBqkV2cZ8TfgLaq",
-    "https://giphy.com/embed/QTfVi01W3PJvmOXwMs",
-    "https://giphy.com/embed/VgU9D8avczJWJi08dT"
+    "https://giphy.com/embed/h4OGa0npayrJX2NRPT",                  // "https://giphy.com/embed/kBlaBqkV2cZ8TfgLaq"
+    "https://giphy.com/embed/dalJ0CpF7hwmN1nZXe",                      
+    "https://giphy.com/embed/PmuLLvty3SDOIaEh77"                    //"https://giphy.com/embed/VgU9D8avczJWJi08dT"
  ]
 
   
