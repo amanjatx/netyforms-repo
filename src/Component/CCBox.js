@@ -18,6 +18,7 @@ const mapDispatchToProps = (dispatch) => {
         },
     }
 } 
+
 function CCBox(props) {
 
     const [g1, setG1] = React.useState('female');
@@ -53,7 +54,7 @@ function CCBox(props) {
                 </FormControl> 
             </form>
     )
-    
+
     return (
         <>
             <CCquicklines />
