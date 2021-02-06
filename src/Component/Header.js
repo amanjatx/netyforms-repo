@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Header() {
     const [sideNavState, changeState] = useState('close');
     const sideNav = {
-        color : 'white',
+        color : 'white', 
         backgroundColor : '#282828',
         position : 'fixed',
         zIndex : '2',

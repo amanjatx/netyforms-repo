@@ -5,8 +5,6 @@ import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import Divider from '@material-ui/core/Divider';
 
-
-
 const sideNavButton = {
   margin : '10px',
   padding : '10px',
@@ -29,7 +27,7 @@ const data = [
   {
     title : 'Privacy Policy',
     link : '',
-  },
+  }, 
   {
     title : 'Map',
     link : '',
