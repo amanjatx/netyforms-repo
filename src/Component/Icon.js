@@ -5,15 +5,11 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-    locationIcon : {
+    root : {
         color: 'rgba(255, 51, 133, 1)',
-        fontSize: '2rem',
-        '&:hover:not(.Mui.disabled)' : {
-            color: 'rgba(255, 51, 133, 1)'
-        },
-        '&:hover' : {
-            color: '#fff02'
-        }
+        cursor : 'pointer',
+        fontSize: '2rem',                                       //'&:hover:not(.Mui.disabled):before' : { color: 'rgba(255, 51, 133, 1)'},
+        '&:hover' : { color: 'white' }
     }
 })
 
@@ -36,15 +32,15 @@ function Icon (props) {
     return(
         <div style={iconDiv}>
 
-              <div><LocationOnIcon  className={classes.locationIcon}  onClick={() => props.handler(visit)} />
+              <div><LocationOnIcon  className={classes.root}  onClick={() => props.handler(visit)} />
                  <p style={{marginTop: '5px', fontSize: '12px'}}>Visit Us</p>
               </div>
 
-              <div><LocalPhoneRoundedIcon className={classes.locationIcon} onClick={() => props.handler(call)} />
+              <div><LocalPhoneRoundedIcon className={classes.root} onClick={() => props.handler(call)} />
                  <p style={{marginTop: '5px', fontSize: '12px'}}>Call Us</p>
               </div>
 
-              <div><MailOutlineRoundedIcon className={classes.locationIcon}  onClick={() => props.handler(email)}/>
+              <div><MailOutlineRoundedIcon className={classes.root}  onClick={() => props.handler(email)}/>
                  <p style={{marginTop: '5px', fontSize: '12px'}}>Email Us</p>
                </div>
          </div>

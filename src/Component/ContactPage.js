@@ -1,5 +1,5 @@
 import React from 'react' 
-import { Paper, Button, FormControl, Input} from '@material-ui/core'
+import { Button, FormControl, Input} from '@material-ui/core'
 import Icon from './Icon';
 import {makeStyles} from '@material-ui/core/styles';  
 
@@ -94,7 +94,7 @@ function ContactPage() {
 
     const conDataPara = {
       color: 'white',
-      margin: '30px 0px',
+      margin: '7px 0px',
       textAlign: 'center',
       maxWidth: paraState==="hide" ? "0px" : '700px',
       opacity: paraState==="hide" ? '0' : '1',
