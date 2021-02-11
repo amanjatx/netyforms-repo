@@ -6,7 +6,7 @@
     width: 100%;
     z-index: 2;
 }
-.logoDiv {
+.logo {
     font-family : 'Permanent Marker', cursive;
     display : flex;
     justify-content : center;
@@ -14,10 +14,15 @@
     font-size : 130%;
     color : #333333;
     height: 65px;
+    transition: all ease 0.1s;
+}
+
+.logo >a:active {
+    color : rgb(244, 244, 255);
+    transform: scale(1.2);
+    transition: all ease 0.1s;
 }
 
 .link {
-    text-decoration: none;
-    /* background-color: chartreuse; */
-}
+    text-decoration: none;}
 

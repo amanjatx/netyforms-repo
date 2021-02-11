@@ -6,7 +6,7 @@ function FooterLinks() {
     return (
         <div className={styles.links}>
             <div><Link className={styles.link} to='/aboutus'>About Us</Link></div>
-            <div><Link className={styles.link} to='/contatus'>Contact Us</Link></div>
+            <div><Link className={styles.link} to='/contactus'>Contact Us</Link></div>
             <div><Link className={styles.link} to='/privacypolicy'>Privacy Policy</Link></div>
         </div>
     )

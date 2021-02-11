@@ -15,14 +15,14 @@ function Sidebar() {
     const toggle = (e) => { setX(x=='N'?'Y':'N') }
 
     const data = [
-        { title : 'About Us', link : '/aboutus' },
-        { title : 'Contact Us', link : '/' },
-        { title : 'Privacy Policy', link : '' }, 
-        { title : 'Map', link : '' },
-        { title : 'Career', link : '', }
+        { title : 'About Us', link : '/aboutus', key : 1 },
+        { title : 'Contact Us', link : '/', key : 2 },
+        { title : 'Privacy Policy', link : '', key : 3 }, 
+        { title : 'Map', link : '', key : 4 },
+        { title : 'Career', link : '', key : 5}
     ]
     const dataMap = data.map( (item) =>
-        <li className='item'>
+        <li className='item' key={item.key}>
             <Link className='itemLink' to={item.link}>{item.title}</Link>
         </li>
     )
