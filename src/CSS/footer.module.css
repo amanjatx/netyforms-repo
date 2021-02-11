@@ -1,14 +1,26 @@
 
-.footerDiv {
+.footer {
     background-color:#ececec;
     padding : 10px;
     color : #2c2c2c;
+    position: relative;
+    top : 50px;
+    font-family: "Poppins", sans-serif;
 }
 .links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
   }
-.links > p {
-    margin: 2% auto;
-    padding: 5px;
+.links > div {
+    text-align: center;
+    width: 100%;
+}
+.link {
+    width: 100%;
+    margin: 0 2px;
+    text-decoration: none !important;
+    color : #272727;
+    font-weight: 600;
+    text-align: center;
 }
