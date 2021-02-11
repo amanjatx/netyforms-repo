@@ -11,6 +11,7 @@ const useStyles = makeStyles({
          padding: '20px 20px',
          margin : '10px 40px',
         overflow: 'hidden',
+        fontWeight : '600',
         '& > .formDiv' : {
             display : 'flex',
             flexDirection : 'column',

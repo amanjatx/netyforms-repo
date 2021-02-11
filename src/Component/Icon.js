@@ -6,8 +6,8 @@ import { makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     locationIcon : {
-        color: 'rgba(255, 51, 133, 1)',
-        fontSize: '3rem',
+        color: '#ff3385',
+        fontSize: '2.5rem',
         '&:hover:not(.Mui.disabled)' : {
             color: 'rgba(255, 51, 133, 1)'
         },

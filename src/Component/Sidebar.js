@@ -38,7 +38,6 @@ function Sidebar() {
                 <div className={sidebarClass}>
                     <Divider className='divider'/>
                     <ul className='sidebarItems'>
-                        <li className='item'>Sidebar Item 1</li>
                         {dataMap}
                     </ul>
                     <Divider className='divider2'/>
