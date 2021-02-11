@@ -21,7 +21,7 @@ function Header() {
     }
     return (
         <> 
-        {/* <SideNav styleprop={sideNav} toggle={toggle}  /> */}
+        <SideNav styleprop={sideNav} toggle={toggle}  />
         <div className={styles.HeaderDiv}>
             <div> 
                 <BtnMenu toggle={toggle}/> 

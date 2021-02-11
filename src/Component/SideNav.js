@@ -14,35 +14,35 @@ const sideNavButton = {
   backgroundColor : 'transparent',
   color : 'white',
 }
-const LinkTitle = ['About Us', 'Contact Us', 'Privacy Policy', 'Map', 'Career']
-const data = [
-  {
-    title : 'About Us',
-    link : '/aboutus'
-  },
-  {
-    title : 'Contact Us',
-    link : '/'
-  },
-  {
-    title : 'Privacy Policy',
-    link : '',
-  }, 
-  {
-    title : 'Map',
-    link : '',
-  },
-  {
-    title : 'Career',
-    link : '',
-  }
-]
+// const LinkTitle = ['About Us', 'Contact Us', 'Privacy Policy', 'Map', 'Career']
+// const data = [
+//   {
+//     title : 'About Us',
+//     link : '/aboutus'
+//   },
+//   {
+//     title : 'Contact Us',
+//     link : '/'
+//   },
+//   {
+//     title : 'Privacy Policy',
+//     link : '',
+//   }, 
+//   {
+//     title : 'Map',
+//     link : '',
+//   },
+//   {
+//     title : 'Career',
+//     link : '',
+//   }
+// ]
 
 function SideNav(props) {
 
-  const dataMap = data.map( (item) => 
-  <Button component={Link} to={item.link} variant="contained" onClick={props.toggle} style={sideNavButton}>{item.title} </Button>
-  )
+  // const dataMap = data.map( (item) => 
+  // <Button component={Link} to={item.link} variant="contained" onClick={props.toggle} style={sideNavButton}>{item.title} </Button>
+  // )
 
   return (
     <div style={props.styleprop}>
@@ -53,7 +53,10 @@ function SideNav(props) {
           </Button>
       </div>
       <Divider style={divider}/>
-        <div style={optionsStyle}>{dataMap}</div> 
+        <div style={optionsStyle}>
+          {/* {dataMap} */}
+          <Button component={Link} to='/aboutus' variant="contained" onClick={props.toggle} style={sideNavButton}>About Us </Button>
+          </div> 
       <Divider style={divider2}/>
         <div style={logoDiv}> Lovecalcy </div>
         <div style={bottomLine}> &copy; 2020</div>
