@@ -1,23 +1,23 @@
-.HeaderDiv {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center; /*vertically align*/
-    height: 50px;
-  }
-  .HeaderDiv > div {
-    width: 30%;
-    margin : 0 5px;
-  }
-
+.header {
+    background: linear-gradient(45deg,  #FF8E53 30%, #FE6B8B  90%);
+    box-shadow: 0px 0px 15px 8px #888888;
+    position: fixed;
+    top : 0; left : 0;
+    width: 100%;
+    z-index: 2;
+}
 .logoDiv {
     font-family : 'Permanent Marker', cursive;
     display : flex;
     justify-content : center;
+    align-items: center;
     font-size : 130%;
     color : #333333;
+    height: 65px;
 }
 
 .link {
     text-decoration: none;
+    /* background-color: chartreuse; */
 }
+

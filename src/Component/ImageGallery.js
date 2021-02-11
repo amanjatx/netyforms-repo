@@ -43,8 +43,6 @@ const data = [
     }
 ]
 
-
-
 function ImageGallery() {
     var [index,setIndex] = useState(0);
     const prevIndex = () => setIndex(index==0?0:--index)
