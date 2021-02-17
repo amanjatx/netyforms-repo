@@ -33,19 +33,19 @@ function CCBox(props) {
     const set_setG1 = (e) => { setG1(e.target.value);  setShowError(0); }
     const set_setG2 = (e) => { setG2(e.target.value); setShowError(0); }
     const changeState = (e) =>{ 
-        e.target.id=='n1' ? setN1(e.target.value) : setN2(e.target.value)
+        e.target.id==='n1' ? setN1(e.target.value) : setN2(e.target.value)
         setShowError(0)
     } 
-    const errorMessage = { display : showError==0 ? 'none' : 'block' }   
+    const errorMessage = { display : showError===0 ? 'none' : 'block' }   
     const classes = boxStyle();
     
     const data = [
-        { title : 'Your Name', name : 'n1', radioName : 'genderf1', al : 'gender', val : g1, method : set_setG1, },
-        { title : 'Your Crush Name', name : 'n2', radioName : 'genderf2', al : 'gender', val : g2, method : set_setG2,},
+        { title : 'Your Name', name : 'n1', radioName : 'genderf1', al : 'gender', val : g1, method : set_setG1, uniqueKey : 1},
+        { title : 'Your Crush Name', name : 'n2', radioName : 'genderf2', al : 'gender', val : g2, method : set_setG2,uniqueKey : 2},
     ]
 
     const dataMap = data.map( item =>
-            <div>
+            <div key={item.uniqueKey}>
                 <FormControl>
                     <Input onChange={changeState} id={item.name} name={item.name} placeholder={item.title} classes={{ underline : classes.input}}/>
                 </FormControl> 
@@ -93,7 +93,7 @@ function CCBox(props) {
                                 <label>ERROR : {errorLabel}</label>
                             </span>
                         </span>
-                        <Button onClick={loadBeforeClick} variant='outlined' classes={{root : classes.rootButton}}> 
+                        <Button onClick={loadBeforeClick} variant='outlined' classes={{root : classes.rootButton}} title='Calculate Love'> 
                             Calculate
                         </Button>
   

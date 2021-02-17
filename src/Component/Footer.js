@@ -5,11 +5,11 @@ import styles from '../CSS/footer.module.css'
 
 function Footer() {
     return (
-        <div className={styles.footerDiv}>
+        <section className={styles.footer}>
             <FooterIcons />
                 <hr></hr> {/* for a grey horizontal line */}
             <FooterLinks />
-        </div>
+        </section>
     )
 }
 

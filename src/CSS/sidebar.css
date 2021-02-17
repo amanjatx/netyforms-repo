@@ -1,0 +1,111 @@
+.section {
+    font-family: "Poppins", sans-serif;
+  }
+  .hamburger {
+    position: fixed;
+    top : 20px; left: 20px;
+    z-index: 1;
+    cursor: pointer;
+    transition : all 0.5s;
+    
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 32px; height: 2px;
+    background-color: rgb(41, 41, 126); 
+    transition: all 0.5s;
+    opacity: 0.8;
+  }
+  
+  .hamburger .line2 {
+    margin : 8px 0;
+  } 
+  .hamburger .clicked { 
+    left : calc(30% -60px);
+  }
+  
+  .clicked .line {
+    background-color: #eee !important;
+  }
+  
+  .clicked .line1 {
+    transform : translateY(10px) rotate(-135deg);
+  }
+  
+  .clicked.line2 {
+    transform : rotate(135deg);
+    opacity: 0;
+  }
+  
+  .clicked.line3 {
+    transform : translateY(-10px) rotate(135deg);
+  }
+  .sidebar {
+    position : fixed;
+    top : 0; left : 0;
+    width : 100%; height : 100%;
+    transform : translateX(-110%);
+    background-color: #272727;
+    transition : all 0.5s;
+    opacity: 0;
+  }
+  
+  .sidebarItems { 
+      list-style : none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+  .sidebar .item {
+    padding : 10px 0px;
+    margin : 10px 0;
+    font-size: 100%;
+    color : #eee;
+    cursor : pointer;
+    transition: all 0.3s;
+  }
+
+  .itemLink {
+    color : white !important;
+    text-decoration: none !important;
+  }
+  
+  .sidebar .item:hover {
+    color : #eee;
+    transform: scale(1.3);
+  }
+  
+  .sidebar.show {
+    transform : translateX(0);
+    opacity: 1;
+  }
+
+  .divider {
+    background-color : #e6e6e6 !important;
+    margin : 15% 5% 0 5% !important ;
+    opacity : 0.3 !important;
+  }
+
+  .divider2 {
+    background-color : #e6e6e6 !important;
+    margin : 0px 40px !important;
+    opacity : 0.1 !important;
+  }
+  .logo {
+    font-family: 'Permanent Marker', cursive;
+    display : flex;
+    justify-content : center;
+    margin-top : 20px;
+    font-size : 200%;
+    color : #0066ff;
+  }
+.bottomLine {
+    font-size : 70%;
+    display : flex;
+    justify-content : center;
+    color : #eee;
+}

@@ -11,7 +11,6 @@ function ContactPage() {
            const [demo, setdemo] = React.useState("");
            const [name, setName] = React.useState('');
            const [email, setEmail] = React.useState('');
-           const [err, setErr] = React.useState('');
     const conDataArr = [
            'address',
            '987342106',
@@ -20,38 +19,18 @@ function ContactPage() {
     const classes = FormStyles();
     
     const data = [
-        { title : 'Your Name', name : 'name', val: name  },
-        { title : 'Your email', name : 'email', val: email } 
-   ]
+        { title : 'Your Name', name : 'name1', key : 1 },
+        {   title : 'Your email', name : 'name2', key : 2 },
+    ]
 
-   const changeHandler = (e) => {
-        if(e.target.name=== 'name'){
-          setName(e.target.value);
-          setErr('');
-        }
-        else
-          setEmail(e.target.value);
-          setErr('');
-    }
-   
     const dataMap = data.map( (dal) =>
-            <div className="formDiv">
+            <div className="formDiv" key={dal.key}>
             <FormControl>
                 <Input id={dal.name} name={dal.name} placeholder={dal.title} value={dal.val}
                    onChange={changeHandler} classes={{ underline : classes.input}} />
             </FormControl> 
           </div>
     )
-
-    const submitHandler = () => {
-         if(!name || !email) {
-            setErr("you must fill your form");
-            return;
-            }
-        else 
-          console.log(name, email)
-          setName(''); setEmail('');
-    }
 
     const clickHandler = (val) => {
        if(demo!==val)
@@ -63,6 +42,7 @@ function ContactPage() {
         case 'visit': return <div>{setContactData(conDataArr[0]) }</div> 
         case 'call' : return <div>{setContactData(conDataArr[1]) } </div>
         case 'email' : return <div>{setContactData(conDataArr[2])}</div>
+        default : return <div></div>
       }
        }
     else
@@ -71,8 +51,6 @@ function ContactPage() {
          setdemo("");
        }
     }
- 
-    const errorMessage = { display : !err ? 'none' : 'block' } 
 
     const conDataPara = {
       color: 'white',
@@ -83,9 +61,7 @@ function ContactPage() {
       transition: '0.5s',
         }
 
-    return (
-      
-          
+    return (      
               <div className= {classes.root}>
                 <div style={{display: 'flex', justifyContent: 'center', color: '#ffff'}}>
                   <h2>Contact Us</h2>
@@ -93,13 +69,8 @@ function ContactPage() {
                 <Icon handler={clickHandler}/>
                 <p style={conDataPara}>{contactData}</p>
                 {dataMap}
-                <span style={errorMessage}>
-                            <span className={styles.errorMessage}>
-                                <label>ERROR : {err}</label>
-                            </span>
-                        </span>
                 <div style={{display: 'flex', justifyContent:'center'}}>
-                <Button variant='outlined' classes={{root : classes.rootButton}} onClick={submitHandler}>submit</Button>
+                <Button title='Submit Your Info' variant='outlined' classes={{root : classes.rootButton}}>submit</Button>
                 </div>
         </div>  
         

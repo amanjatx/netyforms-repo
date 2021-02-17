@@ -13,7 +13,7 @@ const info = {
 
 
 const reducer = (state=info,action) => {
-    if(action.type=='INSERT_INFO') {
+    if(action.type==='INSERT_INFO') {
         return {
             ...state,
             info1 : {
