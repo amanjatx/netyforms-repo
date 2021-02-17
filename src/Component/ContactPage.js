@@ -1,75 +1,57 @@
 import React from 'react' 
 import { Button, FormControl, Input} from '@material-ui/core'
 import Icon from './Icon';
-import {makeStyles} from '@material-ui/core/styles';  
-
-const useStyles = makeStyles({
-    root: {
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',       //FF8E53 //EB7A99
-         borderRadius: 8,
-         border: 0,
-         padding: '20px 20px',
-         margin : '10px 40px',
-        overflow: 'hidden',
-        '& > .formDiv' : {
-            display : 'flex',
-            flexDirection : 'column',
-            justifyContent : 'center',
-            padding : '20px 10px',
-            margin : '5px 0',                 
-            color: '#ffff',
-        }
-    },
-    input: {
-        '&:hover:not(.Mui-disabled):before' : { borderBottom : '1px solid rgba(255, 51, 133, 1)'  }, // outer click //255 51 133 1
-        '&:hover:not(.Mui-disabled):after'  : { border : '1px solid rgba(255, 51, 133, 1)'  }, // animation in
-        '&:before' : { borderBottom: '1px solid rgba(255, 204, 224, 0.5)',  }, // normally
-        '&:after'  : { borderBottom: '1px solid rgba(255, 51, 133, 1)', },  //animation out s
-        color   : 'rgba(255,255,255,0.9)',
-        padding : '0px 20px',
-        fontFamily: `'Quicksand', sans-serif`,
-    },
-    rootButton : {
-      marginBottom: '0px',
-      textTransform : 'none',
-      fontFamily: `'Quicksand', sans-serif`,
-      color: '#ffff',
-      border: ' 1px solid #ffff',
-      padding: '7px 30px'
-  },
-  })
-
+import FormStyles from '../CSS/FormStyle.js'  
+import styles from '../CSS/style.module.css'
 
 
 function ContactPage() {
            const [contactData, setContactData] = React.useState("");
            const [paraState, setParaState] = React.useState("hide");
            const [demo, setdemo] = React.useState("");
+           const [name, setName] = React.useState('');
+           const [email, setEmail] = React.useState('');
+           const [err, setErr] = React.useState('');
     const conDataArr = [
            'address',
            '987342106',
            'jasskaur@gmail.com'
-
     ]
-    const classes = useStyles();
+    const classes = FormStyles();
     
     const data = [
-        {
-            title : 'Your Name', name : 'name1',
-        },
-        {
-            title : 'Your email', name : 'name2',
-        },
-    ]
+        { title : 'Your Name', name : 'name', val: name  },
+        { title : 'Your email', name : 'email', val: email } 
+   ]
 
-    
+   const changeHandler = (e) => {
+        if(e.target.name=== 'name'){
+          setName(e.target.value);
+          setErr('');
+        }
+        else
+          setEmail(e.target.value);
+          setErr('');
+    }
+   
     const dataMap = data.map( (dal) =>
             <div className="formDiv">
             <FormControl>
-                <Input id={dal.name} name={dal.name} placeholder={dal.title} onChange={dal.method2} classes={{ underline : classes.input}}/>
+                <Input id={dal.name} name={dal.name} placeholder={dal.title} value={dal.val}
+                   onChange={changeHandler} classes={{ underline : classes.input}} />
             </FormControl> 
           </div>
     )
+
+    const submitHandler = () => {
+         if(!name || !email) {
+            setErr("you must fill your form");
+            return;
+            }
+        else 
+          console.log(name, email)
+          setName(''); setEmail('');
+    }
 
     const clickHandler = (val) => {
        if(demo!==val)
@@ -89,7 +71,8 @@ function ContactPage() {
          setdemo("");
        }
     }
-
+ 
+    const errorMessage = { display : !err ? 'none' : 'block' } 
 
     const conDataPara = {
       color: 'white',
@@ -97,7 +80,6 @@ function ContactPage() {
       textAlign: 'center',
       maxWidth: paraState==="hide" ? "0px" : '700px',
       opacity: paraState==="hide" ? '0' : '1',
-      visibility: paraState==="hide" ? 'hidden' : 'visible',
       transition: '0.5s',
         }
 
@@ -111,8 +93,13 @@ function ContactPage() {
                 <Icon handler={clickHandler}/>
                 <p style={conDataPara}>{contactData}</p>
                 {dataMap}
+                <span style={errorMessage}>
+                            <span className={styles.errorMessage}>
+                                <label>ERROR : {err}</label>
+                            </span>
+                        </span>
                 <div style={{display: 'flex', justifyContent:'center'}}>
-                <Button variant='outlined' classes={{root : classes.rootButton}}>submit</Button>
+                <Button variant='outlined' classes={{root : classes.rootButton}} onClick={submitHandler}>submit</Button>
                 </div>
         </div>  
         
