@@ -56,3 +56,21 @@
     font-family: 'Quicksand', sans-serif;
     
 }
+
+.nodata {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 75px 30px;
+}
+.nodataHeading {
+    font-weight: 900;
+    font-size: x-large;
+    padding: 20px 0;
+}
+.nodataDetailPara {
+    font-size: 90%;
+    color: teal;
+}

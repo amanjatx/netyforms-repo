@@ -8,7 +8,9 @@ function Header() {
         <section className={styles.header}> 
             <Sidebar/>
             <div className={styles.logo}>
-                <Link to='/' className={styles.link}>LoveCalcy</Link>
+                <Link to='/' className={styles.link}> 
+                    LoveCalcy
+                </Link>
             </div>
         </section>
     )

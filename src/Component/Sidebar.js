@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import cx from 'classnames'
-import {Divider, Link, Button} from '@material-ui/core';
+import {Divider, Button} from '@material-ui/core';
+import { Link } from 'react-router-dom'
 import '../CSS/sidebar.css'
 
 function Sidebar() {
@@ -16,14 +17,15 @@ function Sidebar() {
 
     const data = [
         { title : 'About Us', link : '/aboutus', key : 1 },
-        { title : 'Contact Us', link : '/', key : 2 },
-        { title : 'Privacy Policy', link : '', key : 3 }, 
-        { title : 'Map', link : '', key : 4 },
-        { title : 'Career', link : '', key : 5}
+        { title : 'Contact Us', link : '/contactus', key : 2 },
+         {title : 'Privacy Policy', link : '/notfound', key : 3 }, 
+        { title : 'Map', link : '/notfound', key : 4 },
+        { title : 'Career', link : '/notfound', key : 5},
+        { title : 'Blog', link : '/tempblog', key : 5}
     ]
     const dataMap = data.map( (item) =>
         <li className='item' key={item.key}>
-            <Link className='itemLink' to={item.link}>{item.title}</Link>
+            <Link className='itemLink' to={item.link} onClick={toggle}>{item.title}</Link>
         </li>
     )
     
