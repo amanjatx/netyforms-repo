@@ -23,17 +23,19 @@ function TempBlogPage() {
 
             
             <div className={styles.metaData}>
-                <div className={styles.authorDp}>
-                    <img src={image} height="56" width='55' className={styles.authorDpImage} alt={'dp'}></img>
-                </div>
+                <div className={styles.authorSection}>
+                    <div className={styles.authorDp}>
+                        <img src={image} height="56" width='55' className={styles.authorDpImage} alt={'dp'}></img>
+                    </div>
 
-                <div className={styles.authorMeta}>
-                    <i>Aman Jat</i>
-                    <i>01 January 2021</i>
-                    <span>
-                        <span className={styles.timelogo}><HourglassEmptyRoundedIcon fontSize='small'/></span>
-                        <label> 2 min</label>
-                    </span>
+                    <div className={styles.authorMeta}>
+                        <i>Aman Jat</i>
+                        <i>01 January 2021</i>
+                        <span>
+                            <span className={styles.timelogo}><HourglassEmptyRoundedIcon fontSize='small'/></span>
+                            <label> 2 min</label>
+                        </span>
+                    </div>
                 </div>
 
                 <div className={styles.responseSection}>

@@ -32,34 +32,42 @@
     margin : 0;
 }
     .metaData >div {
-        padding : 0 7px;
+        width: 50%;
     }
+    .authorSection {
+        /* background-color: beige; */
+        display: flex;
+    }
+        .authorSection >div {
+            padding: 5px;
+        }
     .authorDp {
         /* background-color: aqua; */
     }
         .authorDpImage {
             border-radius: 100%;
         }
-    .authorMeta {
-        display: flex;
-        flex-direction: column;
-        /* backrgb(207, 252, 252)ground-color: ; */
-    }
-        .authorMeta >span { 
+        .authorMeta {
             display: flex;
-            flex-direction: row; 
-            align-items: center;
-            padding : 3px 0;
+            flex-direction: column;
+            /* backrgb(207, 252, 252)ground-color: ; */
+            /* background-color: blue; */
         }
-        .timelogo { 
-            display: flex;
-            padding-right : 5px;
-        }
+            .authorMeta >span { 
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                padding : 3px 0;
+            }
+            .timelogo { 
+                display: flex;
+                padding-right : 5px;
+            }
     .responseSection {
-        padding-right: 0px !important;
-        padding-left : 80px !important;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        padding-right: 5%;
         /* background-color: burlywood; */
     } 
         .likeDiv {
