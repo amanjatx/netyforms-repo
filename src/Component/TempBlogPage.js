@@ -4,7 +4,8 @@ import styles from '../CSS/blog.module.css';
 import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 import ReplyRoundedIcon from '@material-ui/icons/ReplyRounded';
-import image from '../Images/blogdp.jpg'
+import image from '../Images/blogdp.jpg';
+import img from '../Images/image1.jpg'
 import HourglassEmptyRoundedIcon from '@material-ui/icons/HourglassEmptyRounded';
 
 function TempBlogPage() {
@@ -50,7 +51,11 @@ function TempBlogPage() {
                 </div>
             </div>
 
-            <Divider></Divider> 
+            <Divider></Divider>
+            <div className={styles.blogImage}>
+            <img src={img}  height='200' width='350' alt='blogimage'></img>
+            </div>
+            
             <p className={styles.para}>So, if you are looking to start making more money or if you want a new career path that lets you earn money from home, this list is especially for you.
                 Over the past year I have been able to interview several people who are making money working from home. They are doing their own thing, and they are rocking at life.
                 Hopefully, you had the chance to read their interviews on my blog, but in case you missed any of them, this post rounds them all up for you.
