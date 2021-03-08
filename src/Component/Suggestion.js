@@ -14,10 +14,8 @@ function Suggestion() {
                     <label>How to Make YourSelf Unvisible</label>
                 </div>
             </div>
-            <div className={styles.SgsCardImage}>
-                <div className={styles.SgsImage}>
-                    <img src={img}  height='120' width='250' alt='blogimage'></img>
-                </div>
+            <div className={styles.SgsImageDiv}>
+                <img className={styles.SgsImage} src={img}  height='120' width='250' alt='blogimage'></img>
             </div>
         </section>
     )

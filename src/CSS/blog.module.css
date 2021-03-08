@@ -125,16 +125,12 @@
         font-family: 'RocknRoll One', sans-serif;
     }
 
-.SgsCardImage {
-            /* background-color: burlywood; */
-           
-}
-.SgsImage {
+.SgsImageDiv {
     display: flex;
     justify-content: center;
     padding: 2px;
 }
-.SgsImage >img {
+.SgsImage {
     border-radius: 8px;
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
 }
