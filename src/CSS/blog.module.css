@@ -107,6 +107,8 @@
 .SgsCard {
     background-color: #fafafa !important;
     margin : 10px 0;
+    padding: 10px 5px;
+    font-family: 'RocknRoll One', sans-serif;
 }
 .SgsCardHeader {
     display: flex;
@@ -122,7 +124,6 @@
         width: 85%;
         font-size: 110%;
         color : #ff5050;
-        font-family: 'RocknRoll One', sans-serif;
     }
 
 .SgsImageDiv {
@@ -134,6 +135,36 @@
     border-radius: 8px;
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
 }
+.SgsStat {
+    font-size: 80%;
+    color : #595959;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+}
+    .SgsStatBar1 {
+        /* background-color: aqua; */
+        width: 50%;
+    }
+        .SgsStatTime {
+            display: flex;
+            flex-direction: row;
+        }
+    .SgsStatBar2 {
+        /* background-color: rgb(68, 175, 175); */
+        width: 50%;
+    }
+        .SgsStatStat{
+            display: flex;
+            flex-direction: row;
+            font-size: 90% !important;
+            justify-content: flex-end;
+        }
+        .SgsStaticons {
+            /* background-color: rgb(233, 235, 155); */
+            padding: 0 5px;
+        }
+
 .DetailPara {
     font-size: 90%;
     color: teal;
