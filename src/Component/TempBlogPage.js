@@ -1,19 +1,19 @@
 import { Divider } from '@material-ui/core'
 import React from 'react';
 import styles from '../CSS/blog.module.css';
-import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 import ReplyRoundedIcon from '@material-ui/icons/ReplyRounded';
-import image from '../Images/blogdp.jpg';
 import img from '../Images/image1.jpg'
 import HourglassEmptyRoundedIcon from '@material-ui/icons/HourglassEmptyRounded';
+import Suggestion from '../Component/Suggestion'
+import AuthorDp from '../Component/AuthorDp'
 
 function TempBlogPage() {
     return (
         <div className={styles.blog}>
             <div className={styles.section1}>
                 <label className={styles.path}>
-                    Home > Blog >
+                    Home / Blog /
                 </label>
                 <h1 className={styles.heading}>
                     How to Earn Money Online 2021
@@ -25,10 +25,7 @@ function TempBlogPage() {
             
             <div className={styles.metaData}>
                 <div className={styles.authorSection}>
-                    <div className={styles.authorDp}>
-                        <img src={image} height="56" width='55' className={styles.authorDpImage} alt={'dp'}></img>
-                    </div>
-
+                    <AuthorDp height='56' width='55'></AuthorDp>
                     <div className={styles.authorMeta}>
                         <i>Aman Jat</i>
                         <i>01 January 2021</i>
@@ -61,6 +58,13 @@ function TempBlogPage() {
                 Hopefully, you had the chance to read their interviews on my blog, but in case you missed any of them, this post rounds them all up for you.
                 This round-up includes everything from selling on Amazon, teaching English, becoming a cooking instructor, flipping items for profits, and more! If you’re wondering “How can I earn money working from home?”, then this is for you.
             </p>
+            
+            {/* <Divider></Divider> */}
+
+            <div className={styles.SuggestionSection}>
+                <Suggestion />
+            </div>
+            
         </div>
     )
 }
