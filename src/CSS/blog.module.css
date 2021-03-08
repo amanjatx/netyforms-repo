@@ -121,17 +121,22 @@
     .SgsCardHeaderHeading {
         width: 85%;
         font-size: 110%;
-        color : #ff5050        ;
+        color : #ff5050;
         font-family: 'RocknRoll One', sans-serif;
     }
 
 .SgsCardImage {
             /* background-color: burlywood; */
+           
 }
 .SgsImage {
     display: flex;
     justify-content: center;
     padding: 2px;
+}
+.SgsImage >img {
+    border-radius: 8px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
 }
 .DetailPara {
     font-size: 90%;
