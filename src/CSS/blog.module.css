@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 .blog {
     display: flex;
     flex-direction: column;
@@ -89,9 +89,10 @@
         .shareDiv {
 
         }
-            .forwardIcon {
+            .forwardIcon1 {
                 transform: scale(-1, 1);
-                font-size: 26px;
+                font-size: 32px !important;
+                margin-bottom: -5px;
             }
 
 .blogImage {
@@ -104,6 +105,40 @@
 .para {
     text-align: left;
 }
+.blogBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse !important;
+}
+.blogBottomButton {
+    background-color: #f2f2f2 !important;
+    margin: 0 5px;
+}
+    .blogBottomButtonInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogButtonIcon {
+        margin: 0px 0;
+    }
+        .blogButtonLabel {
+            font-size: 60%;
+            padding:  0 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 900;
+        }
+        .blogButtonStat {
+            font-size: 150%;
+            padding-right:  10px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 900;
+            color: #8c8c8c;
+        }
 .SgsCard {
     background-color: #fafafa !important;
     margin : 10px 0;
@@ -123,7 +158,7 @@
     .SgsCardHeaderHeading {
         width: 85%;
         font-size: 110%;
-        color : #ff5050;
+        color : #8c8c8c;
     }
 
 .SgsImageDiv {
@@ -143,7 +178,6 @@
     flex-direction: row;
 }
     .SgsStatBar1 {
-        /* background-color: aqua; */
         width: 50%;
     }
         .SgsStatTime {

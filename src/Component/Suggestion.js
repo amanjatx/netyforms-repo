@@ -13,14 +13,14 @@ function Suggestion() {
         <section className={styles.SgsCard}>
             <div className={styles.SgsCardHeader}>
                 <div className={styles.SgsCardHeaderAuthorDp}>
-                    <AuthorDp height='40' width='42'></AuthorDp>
+                    <AuthorDp height='40' width='40'></AuthorDp>
                 </div>
                 <div className={styles.SgsCardHeaderHeading}>
                     <label>How to Make YourSelf Unvisible</label>
                 </div>
             </div>
             <div className={styles.SgsImageDiv}>
-                <img className={styles.SgsImage} src={img}  height='120' width='250' alt='blogimage'></img>
+                <img className={styles.SgsImage} src={img}  height='120' width='280' alt='blogimage'></img>
             </div>
             <div className={styles.SgsStat}>
                 <div className={styles.SgsStatBar1}>
@@ -31,10 +31,11 @@ function Suggestion() {
                 </div>
                 <div className={styles.SgsStatBar2}>
                     <div className={styles.SgsStatStat}>
+                    <VisibilityRoundedIcon className={styles.SgsStaticons} fontSize='small'/>
+                        1.4k
                         <ThumbUpAltRoundedIcon className={styles.SgsStaticons} fontSize='small'/>
                         550
-                        <VisibilityRoundedIcon className={styles.SgsStaticons} fontSize='small'/>
-                        1.4k
+
                     </div>    
                 </div>
 

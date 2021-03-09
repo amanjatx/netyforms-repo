@@ -4,9 +4,11 @@ import styles from '../CSS/blog.module.css';
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 import ReplyRoundedIcon from '@material-ui/icons/ReplyRounded';
 import img from '../Images/image1.jpg'
-import HourglassEmptyRoundedIcon from '@material-ui/icons/HourglassEmptyRounded';
 import Suggestion from '../Component/Suggestion'
 import AuthorDp from '../Component/AuthorDp'
+import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
+
+
 
 function TempBlogPage() {
     return (
@@ -30,7 +32,7 @@ function TempBlogPage() {
                         <i>Aman Jat</i>
                         <i>01 January 2021</i>
                         <span>
-                            <span className={styles.timelogo}><HourglassEmptyRoundedIcon fontSize='small'/></span>
+                            <span className={styles.timelogo}><QueryBuilderRoundedIcon fontSize='small'/></span>
                             <label> 2 min</label>
                         </span>
                     </div>
@@ -42,7 +44,7 @@ function TempBlogPage() {
                         <div className={styles.count}>0</div>
                     </div>
                     <div className={styles.likeDiv}>
-                        <span className={styles.icon}><ReplyRoundedIcon className={styles.forwardIcon} /></span>
+                        <span className={styles.icon}><ReplyRoundedIcon className={styles.forwardIcon1} /></span>
                         <span className={styles.count}>0</span>
                     </div>
                 </div>
@@ -58,7 +60,25 @@ function TempBlogPage() {
                 Hopefully, you had the chance to read their interviews on my blog, but in case you missed any of them, this post rounds them all up for you.
                 This round-up includes everything from selling on Amazon, teaching English, becoming a cooking instructor, flipping items for profits, and more! If you’re wondering “How can I earn money working from home?”, then this is for you.
             </p>
-            
+            <div className={styles.blogBottom}>
+                
+                <Button className={styles.blogBottomButton}>
+                    <div className={styles.blogBottomButtonInside}>
+                            <ThumbUpAltRoundedIcon className={styles.blogButtonIcon} fontSize='large'/>
+                            <label className={styles.blogButtonLabel}>Like</label>
+                            <label className={styles.blogButtonStat}>+54</label>
+                    </div>
+                </Button>
+
+                <Button className={styles.blogBottomButton}>
+                    <div className={styles.blogBottomButtonInside}>
+                            <ReplyRoundedIcon className={styles.blogButtonIcon} style={{transform: 'scale(-1, 1)'}} fontSize='large' />
+                            <label className={styles.blogButtonLabel}>Share</label>
+                            <label className={styles.blogButtonStat}>+25</label>
+                    </div>
+                </Button>
+
+            </div>
             {/* <Divider></Divider> */}
 
             <div className={styles.SuggestionSection}>
