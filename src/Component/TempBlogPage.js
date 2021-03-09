@@ -7,7 +7,7 @@ import img from '../Images/image1.jpg'
 import Suggestion from '../Component/Suggestion'
 import AuthorDp from '../Component/AuthorDp'
 import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
-
+import Button from '@material-ui/core/Button'
 
 
 function TempBlogPage() {
