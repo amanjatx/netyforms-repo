@@ -2,8 +2,6 @@ import React from 'react'
 import styles from '../CSS/blog.module.css';
 import AuthorDp from './AuthorDp';
 import img from '../Images/image1.jpg'
-import IconButton from '@material-ui/core/IconButton';
-import HourglassEmptyRoundedIcon from '@material-ui/icons/HourglassEmptyRounded';
 import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 import VisibilityRoundedIcon from '@material-ui/icons/VisibilityRounded';

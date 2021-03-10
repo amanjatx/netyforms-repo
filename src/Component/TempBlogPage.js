@@ -1,4 +1,4 @@
-import { Divider } from '@material-ui/core'
+import { Divider, Button } from '@material-ui/core'
 import React from 'react';
 import styles from '../CSS/blog.module.css';
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
@@ -7,8 +7,6 @@ import img from '../Images/image1.jpg'
 import Suggestion from '../Component/Suggestion'
 import AuthorDp from '../Component/AuthorDp'
 import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
-import Button from '@material-ui/core/Button'
-
 
 function TempBlogPage() {
     return (
@@ -61,7 +59,6 @@ function TempBlogPage() {
                 This round-up includes everything from selling on Amazon, teaching English, becoming a cooking instructor, flipping items for profits, and more! If you’re wondering “How can I earn money working from home?”, then this is for you.
             </p>
             <div className={styles.blogBottom}>
-                
                 <Button className={styles.blogBottomButton}>
                     <div className={styles.blogBottomButtonInside}>
                             <ThumbUpAltRoundedIcon className={styles.blogButtonIcon} fontSize='large'/>
@@ -77,9 +74,9 @@ function TempBlogPage() {
                             <label className={styles.blogButtonStat}>+25</label>
                     </div>
                 </Button>
-
             </div>
-            {/* <Divider></Divider> */}
+            <span style={{margin:'20px'}}><Divider></Divider></span>
+            
 
             <div className={styles.SuggestionSection}>
                 <Suggestion />
