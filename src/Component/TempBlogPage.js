@@ -15,13 +15,7 @@ function TempBlogPage() {
                 <label className={styles.path}>
                     Home / Blog /
                 </label>
-                <h1 className={styles.heading}>
-                    How to Earn Money Online 2021
-                </h1>
             </div>
-
-            <Divider></Divider>
-
             
             <div className={styles.metaData}>
                 <div className={styles.authorSection}>
@@ -48,7 +42,9 @@ function TempBlogPage() {
                 </div>
             </div>
 
-            <Divider></Divider>
+            <h1 className={styles.heading}>
+                    How to Earn Money Online 2021
+            </h1>
             <div className={styles.blogImage}>
             <img src={img}  height='200' width='350' alt='blogimage'></img>
             </div>
