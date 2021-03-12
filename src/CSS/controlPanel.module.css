@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.ControlPanel {
+    background-color: whitesmoke;
+    margin-bottom: -15px;
+    padding : 50px;
+    display: flex;
+    flex-direction: column;
+}
+    .X1Row {
+        /* background-color: violet; */
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+        .X1Field1 {
+            /* background-color: rgb(206, 149, 42); */
+            width: 30%;
+            text-align: right;
+            padding : 0 5px;
+        }
+        .X1Field2 {
+            /* background-color: rgb(96, 212, 85); */
+        }
+            .input {
+                background-color: rgb(236, 230, 230);
+                border: none;
+                outline: none;
+                padding: 5px;
+                width: 550px;
+                font-size: 15px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 500;
+            }
+            .textarea {
+                background-color: rgb(236, 230, 230);
+                border: none;
+                outline: none;
+                padding: 5px;
+                height : 150px;
+                width: 550px;
+                font-size: 15px;
+                font-family: 'Quicksand', sans-serif !important;
+                font-weight: 500;
+            }
+            /* .input:active {
+                outline: none;
+            } */

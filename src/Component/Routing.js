@@ -7,7 +7,8 @@ import styles from '../CSS/content.module.css'
 import { Switch, Route } from 'react-router-dom'
 import NotFound from './NotFound'
 import TempBlogPage from './TempBlogPage'
-
+import ControlPanel from './ControlPanel'
+import AddBlog from './AddBlog'
 
 function Routing() {
     return (
@@ -20,6 +21,8 @@ function Routing() {
                     <Route path='/contactus' component={ContactPage}/>
                     <Route path='/notfound' component={NotFound}/>
                     <Route path='/tempblog' component={TempBlogPage}/>
+                    <Route path='/cp' component={ControlPanel}/>
+                    <Route path='/addblog' component={AddBlog}/>
                 </Switch>
         </div>
     )

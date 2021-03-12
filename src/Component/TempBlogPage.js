@@ -7,21 +7,30 @@ import img from '../Images/image1.jpg'
 import Suggestion from '../Component/Suggestion'
 import AuthorDp from '../Component/AuthorDp'
 import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
+import VisibilityRoundedIcon from '@material-ui/icons/VisibilityRounded';
 
 function TempBlogPage() {
     return (
         <div className={styles.blog}>
             <div className={styles.section1}>
-                <label className={styles.path}>
-                    Home / Blog /
-                </label>
+                <div>
+                    <label className={styles.path}>
+                        Home / Blog /
+                    </label> 
+                </div>
+                <div>
+                    <label className={styles.path}><a href='/'> Edit </a></label>
+                    <label className={styles.path}><a href='/'> Report </a></label>
+                    <label className={styles.path}><a href='/'> Suggest </a></label>
+                </div>
+       
             </div>
             
             <div className={styles.metaData}>
                 <div className={styles.authorSection}>
                     <AuthorDp height='56' width='55'></AuthorDp>
                     <div className={styles.authorMeta}>
-                        <i>Aman Jat</i>
+                        <i><b><a style={{textDecoration : 'none'}}href='https://twitter.com/amanjat261'>Aman Jat</a></b></i>
                         <i>01 January 2021</i>
                         <span>
                             <span className={styles.timelogo}><QueryBuilderRoundedIcon fontSize='small'/></span>
@@ -32,11 +41,7 @@ function TempBlogPage() {
 
                 <div className={styles.responseSection}>
                     <div className={styles.likeDiv}>
-                        <div className={styles.icon}><ThumbUpAltRoundedIcon /></div>
-                        <div className={styles.count}>0</div>
-                    </div>
-                    <div className={styles.likeDiv}>
-                        <span className={styles.icon}><ReplyRoundedIcon className={styles.forwardIcon1} /></span>
+                        <span className={styles.icon}><VisibilityRoundedIcon className={styles.SgsStaticons} fontSize='small'/></span>
                         <span className={styles.count}>0</span>
                     </div>
                 </div>
@@ -73,7 +78,7 @@ function TempBlogPage() {
             </div>
             <span style={{margin:'20px'}}><Divider></Divider></span>
             
-
+            <label><b>Related Articles : </b></label>
             <div className={styles.SuggestionSection}>
                 <Suggestion />
             </div>
