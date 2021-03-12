@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/netyforms-repo/static/css/main.236618ab.chunk.css",
-    "main.js": "/netyforms-repo/static/js/main.c50375cf.chunk.js",
-    "main.js.map": "/netyforms-repo/static/js/main.c50375cf.chunk.js.map",
-    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.ad6ad7f2.js",
-    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.ad6ad7f2.js.map",
-    "static/js/2.8bf1daa8.chunk.js": "/netyforms-repo/static/js/2.8bf1daa8.chunk.js",
-    "static/js/2.8bf1daa8.chunk.js.map": "/netyforms-repo/static/js/2.8bf1daa8.chunk.js.map",
-    "static/js/3.82bddf36.chunk.js": "/netyforms-repo/static/js/3.82bddf36.chunk.js",
-    "static/js/3.82bddf36.chunk.js.map": "/netyforms-repo/static/js/3.82bddf36.chunk.js.map",
+    "main.css": "/netyforms-repo/static/css/main.b43a3bd8.chunk.css",
+    "main.js": "/netyforms-repo/static/js/main.c578ef95.chunk.js",
+    "main.js.map": "/netyforms-repo/static/js/main.c578ef95.chunk.js.map",
+    "runtime-main.js": "/netyforms-repo/static/js/runtime-main.e00d2660.js",
+    "runtime-main.js.map": "/netyforms-repo/static/js/runtime-main.e00d2660.js.map",
+    "static/js/2.f49e7405.chunk.js": "/netyforms-repo/static/js/2.f49e7405.chunk.js",
+    "static/js/2.f49e7405.chunk.js.map": "/netyforms-repo/static/js/2.f49e7405.chunk.js.map",
+    "static/js/3.f64f9d27.chunk.js": "/netyforms-repo/static/js/3.f64f9d27.chunk.js",
+    "static/js/3.f64f9d27.chunk.js.map": "/netyforms-repo/static/js/3.f64f9d27.chunk.js.map",
     "index.html": "/netyforms-repo/index.html",
-    "static/css/main.236618ab.chunk.css.map": "/netyforms-repo/static/css/main.236618ab.chunk.css.map",
-    "static/js/2.8bf1daa8.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.8bf1daa8.chunk.js.LICENSE.txt",
+    "static/css/main.b43a3bd8.chunk.css.map": "/netyforms-repo/static/css/main.b43a3bd8.chunk.css.map",
+    "static/js/2.f49e7405.chunk.js.LICENSE.txt": "/netyforms-repo/static/js/2.f49e7405.chunk.js.LICENSE.txt",
     "static/media/amanjat.10887b85.jpg": "/netyforms-repo/static/media/amanjat.10887b85.jpg",
     "static/media/blogdp.7e7a0c32.jpg": "/netyforms-repo/static/media/blogdp.7e7a0c32.jpg",
     "static/media/image1.4ac0745a.jpg": "/netyforms-repo/static/media/image1.4ac0745a.jpg",
     "static/media/jass.6a8bf4ef.jpg": "/netyforms-repo/static/media/jass.6a8bf4ef.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ad6ad7f2.js",
-    "static/js/2.8bf1daa8.chunk.js",
-    "static/css/main.236618ab.chunk.css",
-    "static/js/main.c50375cf.chunk.js"
+    "static/js/runtime-main.e00d2660.js",
+    "static/js/2.f49e7405.chunk.js",
+    "static/css/main.b43a3bd8.chunk.css",
+    "static/js/main.c578ef95.chunk.js"
   ]
 }
