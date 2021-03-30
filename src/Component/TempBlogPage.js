@@ -8,6 +8,7 @@ import Suggestion from '../Component/Suggestion'
 import AuthorDp from '../Component/AuthorDp'
 import QueryBuilderRoundedIcon from '@material-ui/icons/QueryBuilderRounded';
 import VisibilityRoundedIcon from '@material-ui/icons/VisibilityRounded';
+import { Link } from 'react-router-dom'
 
 function TempBlogPage() {
     return (
@@ -19,9 +20,9 @@ function TempBlogPage() {
                     </label> 
                 </div>
                 <div>
-                    <label className={styles.path}><a href='/'> Edit </a></label>
-                    <label className={styles.path}><a href='/'> Report </a></label>
-                    <label className={styles.path}><a href='/'> Suggest </a></label>
+                    <Link className={styles.link}>Edit</Link>
+                    <Link className={styles.link}>Report</Link>
+                    <Link className={styles.link}>Suggest</Link>
                 </div>
        
             </div>

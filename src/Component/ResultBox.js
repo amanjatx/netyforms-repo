@@ -2,8 +2,8 @@ import React from 'react'
 import {Paper, Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import CCquicklines from './CCquicklines';
 import {connect} from 'react-redux'
+import styles from '../CSS/content.module.css'
 
 const mapStateToProps = state => {
     return {
@@ -70,7 +70,10 @@ const ResultBox = (props) =>  {
     const classes = resultBoxStyle();
     return (
         <>
-            <CCquicklines />
+            <div className={styles.lineDiv}>
+                <p className={styles.line1}>Check Your Love Percentage</p>
+                <p className={styles.line2}><q>but something can never be calculated</q></p>
+            </div>
             <Paper elevation={6} classes={{ root: classes.root }} >
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
                 <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>

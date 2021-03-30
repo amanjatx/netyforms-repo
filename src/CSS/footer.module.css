@@ -24,3 +24,15 @@
     font-weight: 600;
     text-align: center;
 }
+.flexContainerIcons {
+    display: flex;
+    justify-content : center;
+}
+.flexContainerIcons > div {
+    margin: 5px 4%;
+    padding: 5px;
+    font-size: 30px;
+  }
+.iconLink {
+    color : #4b4b4b;
+}

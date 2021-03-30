@@ -1,10 +1,9 @@
 import React from 'react'
-import CCquicklines from './CCquicklines';
 import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
 import {Redirect } from 'react-router-dom'
 import {connect} from 'react-redux'
 import boxStyle from '../CSS/boxStyle.js'
-import styles from '../CSS/style.module.css'
+import styles from '../CSS/content.module.css'
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -50,7 +49,7 @@ function CCBox(props) {
                 </FormControl> 
 
                 <FormControl>
-                    <RadioGroup aria-label={item.al} name={item.radioName} value={item.val} onChange={item.method} classes={{root : classes.rootRadioGroup}}>
+                    <RadioGroup classes={{root : classes.rootRadioGroup}} aria-label={item.al} name={item.radioName} value={item.val} onChange={item.method} >
                         <FormControlLabel value="female" control={<Radio size='small' color='primary' 
                             classes={{ root: classes.rootRadio, checked: classes.checked, }}
                             />} label="Female" classes={{label : classes.labelFormControlLabelRadio}} /> 
@@ -58,11 +57,9 @@ function CCBox(props) {
                             classes={{ root: classes.rootRadio, checked: classes.checked, }}
                             />} label="Male" classes={ {label : classes.labelFormControlLabelRadio} } /> 
                     </RadioGroup>
-                </FormControl> 
-                
+                </FormControl>   
             </div>
     )
-    
     
     const loadBeforeClick = () => {
         if(n1==null || n2==null || g1==null || g2==null) {
@@ -78,13 +75,14 @@ function CCBox(props) {
         }
     }
 
-    if(redirect) {
-        return <Redirect push to='/resultBox'/>
-    }
+    if(redirect) { return <Redirect push to='/resultBox'/> }
     
     return (
         <>
-            <CCquicklines />
+            <div className={styles.lineDiv}>
+                <p className={styles.line1}>Check Your Love Percentage</p>
+                <p className={styles.line2}><q>but something can never be calculated</q></p>
+            </div>
             <Paper elevation={6} classes={{ root: classes.root }}>
                         {dataMap}
                         <span style={errorMessage}>
@@ -100,5 +98,4 @@ function CCBox(props) {
         </>
     )
 }
-
 export default connect(null, mapDispatchToProps)(CCBox)

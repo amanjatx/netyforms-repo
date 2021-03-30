@@ -12,6 +12,9 @@ function ControlPanel() {
                     >Add A Blog</Link>
                 </div>
                 <div>
+                    <Link className={styles.link}>Delete A Blog</Link>
+                </div>
+                <div>
                     <Link className={styles.link}>Edit Requests</Link>
                 </div>
                 <div>

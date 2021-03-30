@@ -3,6 +3,7 @@ import styles from '../CSS/controlPanel.module.css';
 import { Link } from 'react-router-dom'
 import Input from '@material-ui/core/Input';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button'
 function AddBlog() {
     return (
         <div className={styles.ControlPanel}>
@@ -22,6 +23,9 @@ function AddBlog() {
                     <div className={styles.X1Field2}>
                         <textarea className={styles.textarea}></textarea>
                     </div>
+                </div>
+                <div className={styles.X2button}>
+                    <Button variant='contained' className={styles.button}>Publish</Button>
                 </div>
             </div>
         </div>
