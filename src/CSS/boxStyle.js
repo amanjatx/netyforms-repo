@@ -6,7 +6,7 @@ const useStyles = makeStyles({
         borderRadius: 8,
         border: 0,
         padding: '20px 30px',
-        margin : '10px 40px',
+        margin : '10px 40px', 
         display : 'flex',
         flexDirection : 'column',
         '&>div': {
@@ -38,14 +38,6 @@ const useStyles = makeStyles({
         color : 'rgba(255, 204, 224, 0.9)',
         fontSize : '90%',
         fontFamily: `'Quicksand', sans-serif`,
-    },
-    rootButton : {
-        margin : '20px 10px',
-        textTransform : 'none',
-        fontFamily: `'Quicksand', sans-serif`,
-        border : '1px solid white',
-        color : 'white',
-
     },
     rootRadio: {
         '&$checked': {

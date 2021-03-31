@@ -20,9 +20,9 @@ function TempBlogPage() {
                     </label> 
                 </div>
                 <div>
-                    <Link className={styles.link}>Edit</Link>
-                    <Link className={styles.link}>Report</Link>
-                    <Link className={styles.link}>Suggest</Link>
+                    <Link className={styles.link} to=''>Edit</Link>
+                    <Link className={styles.link} to=''>Report</Link>
+                    <Link className={styles.link} to=''>Suggest</Link>
                 </div>
        
             </div>

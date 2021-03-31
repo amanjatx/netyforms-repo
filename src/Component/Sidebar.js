@@ -21,7 +21,7 @@ function Sidebar() {
          {title : 'Privacy Policy', link : '/notfound', key : 3 }, 
         { title : 'Map', link : '/notfound', key : 4 },
         { title : 'Career', link : '/notfound', key : 5},
-        { title : 'Blog', link : '/tempblog', key : 5}
+        { title : 'Blog', link : '/tempblog', key : 6}
     ]
     const dataMap = data.map( (item) =>
         <li className='item' key={item.key}>

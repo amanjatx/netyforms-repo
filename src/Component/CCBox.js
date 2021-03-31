@@ -4,6 +4,7 @@ import {Redirect } from 'react-router-dom'
 import {connect} from 'react-redux'
 import boxStyle from '../CSS/boxStyle.js'
 import styles from '../CSS/content.module.css'
+import ButtonOutlined from './ButtonOutlined.js'
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -90,9 +91,7 @@ function CCBox(props) {
                                 <label>ERROR : {errorLabel}</label>
                             </span>
                         </span>
-                        <Button onClick={loadBeforeClick} variant='outlined' classes={{root : classes.rootButton}} title='Calculate Love'> 
-                            Calculate
-                        </Button>
+            <ButtonOutlined method={loadBeforeClick} title={'Calculate'}/>
   
             </Paper>
         </>

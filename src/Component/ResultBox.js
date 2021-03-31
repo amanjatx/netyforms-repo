@@ -4,6 +4,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import {connect} from 'react-redux'
 import styles from '../CSS/content.module.css'
+import ButtonOutlined from './ButtonOutlined'
 
 const mapStateToProps = state => {
     return {
@@ -68,6 +69,7 @@ const resultBoxStyle = makeStyles({
 const ResultBox = (props) =>  {
     var cent = Math.round(Math.random()*100)
     const classes = resultBoxStyle();
+    const method = () => {} 
     return (
         <>
             <div className={styles.lineDiv}>
@@ -75,13 +77,17 @@ const ResultBox = (props) =>  {
                 <p className={styles.line2}><q>but something can never be calculated</q></p>
             </div>
             <Paper elevation={6} classes={{ root: classes.root }} >
+                
                 <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
-                <Button variant='outlined' classes={{root : classes.rootButton}}>Share Result</Button>
+                
+                <ButtonOutlined method={method} title={'Share Result'}/>
+                
                 <InputLabel classes={{ root: classes.rootLabelDesc }}>
                     <span>Congratulations!</span> {props.g1==='male' ? 'Mr.' : 'Miss'} {props.n1}, Our 
                     Estimate is that you and {props.g2==='male' ? 'Mr.' : 'Miss'} {props.n2} love each other with {cent}% of love, but don't think much about it, you can increase 
                     this number, you just need to give more time to this relationship and yes, giver her a gift
                 </InputLabel>
+            
             </Paper> 
         </>
     )
