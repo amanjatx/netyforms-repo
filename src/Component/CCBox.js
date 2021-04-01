@@ -85,14 +85,13 @@ function CCBox(props) {
                 <p className={styles.line2}><q>but something can never be calculated</q></p>
             </div>
             <Paper elevation={6} classes={{ root: classes.root }}>
-                        {dataMap}
+                {dataMap}
                         <span style={errorMessage}>
                             <span className={styles.errorMessage}>
                                 <label>ERROR : {errorLabel}</label>
                             </span>
                         </span>
-            <ButtonOutlined method={loadBeforeClick} title={'Calculate'}/>
-  
+                <ButtonOutlined method={loadBeforeClick} title={'Calculate'}/>
             </Paper>
         </>
     )
