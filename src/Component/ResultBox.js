@@ -5,6 +5,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import {connect} from 'react-redux'
 import styles from '../CSS/content.module.css'
 import ButtonOutlined from './ButtonOutlined'
+import Suggestion from './Suggestion'
 
 const mapStateToProps = state => {
     return {
@@ -57,38 +58,47 @@ const resultBoxStyle = makeStyles({
                 color : 'Green'
             }
     },
-    rootButton : {
-        margin : '20px 10px',
-        textTransform : 'none',
-        fontFamily: `'Quicksand', sans-serif`,
-        border : '1px solid white',
-        color : 'white',
-    },
 }) 
 
 const ResultBox = (props) =>  {
     var cent = Math.round(Math.random()*100)
+    var welcomeMessage = cent>40 ? 'Congratulations !' : 'Oh No !'
+
     const classes = resultBoxStyle();
-    const method = () => {} 
+    const method = () => {}
     return (
         <>
             <div className={styles.lineDiv}>
                 <p className={styles.line1}>Check Your Love Percentage</p>
                 <p className={styles.line2}><q>but something can never be calculated</q></p>
             </div>
-            <Paper elevation={6} classes={{ root: classes.root }} >
-                
-                <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
-                
-                <ButtonOutlined method={method} title={'Share Result'}/>
-                
-                <InputLabel classes={{ root: classes.rootLabelDesc }}>
-                    <span>Congratulations!</span> {props.g1==='male' ? 'Mr.' : 'Miss'} {props.n1}, Our 
-                    Estimate is that you and {props.g2==='male' ? 'Mr.' : 'Miss'} {props.n2} love each other with {cent}% of love, but don't think much about it, you can increase 
-                    this number, you just need to give more time to this relationship and yes, giver her a gift
-                </InputLabel>
+
+            <div className= {styles.OuterDiv}>
+                <div className={styles.InnerDivLeft}>
+
+                </div>
+
+                <div className={styles.InnerDivMiddle}>
+                    <Paper elevation={6} classes={{ root: classes.root }} >
+                    
+                        <InputLabel classes={{root : classes.rootLabel}}>{cent}<span>%</span></InputLabel>
+                        
+                        <ButtonOutlined method={method} title={'Share Result'}/>
+                        
+                        <InputLabel classes={{ root: classes.rootLabelDesc }}>
+                            <span>{welcomeMessage}</span> {props.g1==='male' ? 'Mr.' : 'Miss'} {props.n1}, Our 
+                            Estimate is that you and {props.g2==='male' ? 'Mr.' : 'Miss'} {props.n2} love each other with {cent}% of love, but don't think much about it, you can increase 
+                            this number, you just need to give more time to this relationship and yes, giver your partner a gift
+                        </InputLabel>
+                    </Paper>
+                </div>
+
+                <div className={styles.InnerDivRight}>
+
+                </div>
+            </div>
             
-            </Paper> 
+            <Suggestion /> 
         </>
     )
 }

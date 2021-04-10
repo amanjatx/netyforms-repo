@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {RadioGroup, FormControlLabel, Radio, Paper, Button, FormControl, Input} from '@material-ui/core'
 import {Redirect } from 'react-router-dom'
 import {connect} from 'react-redux'
 import boxStyle from '../CSS/boxStyle.js'
 import styles from '../CSS/content.module.css'
 import ButtonOutlined from './ButtonOutlined.js'
+
+
+
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -20,6 +23,14 @@ const mapDispatchToProps = (dispatch) => {
     }
 } 
 function CCBox(props) {
+
+    const [width, setWidth] = useState(window.innerWidth);
+    React.useEffect(
+    () => {
+            const handleResize = () => { setWidth(window.innerWidth); }
+            window.addEventListener('resize', handleResize);
+    }
+    )
 
     const [g1, setG1] = React.useState();
     const [g2, setG2] = React.useState();
@@ -78,21 +89,36 @@ function CCBox(props) {
 
     if(redirect) { return <Redirect push to='/resultBox'/> }
     
+
     return (
         <>
             <div className={styles.lineDiv}>
                 <p className={styles.line1}>Check Your Love Percentage</p>
                 <p className={styles.line2}><q>but something can never be calculated</q></p>
             </div>
-            <Paper elevation={6} classes={{ root: classes.root }}>
-                {dataMap}
-                        <span style={errorMessage}>
-                            <span className={styles.errorMessage}>
-                                <label>ERROR : {errorLabel}</label>
-                            </span>
-                        </span>
-                <ButtonOutlined method={loadBeforeClick} title={'Calculate'}/>
-            </Paper>
+            <div className={styles.OuterDiv}>
+                <div className={styles.InnerDivLeft}>
+                    
+                </div>
+
+                <div  className={styles.InnerDivMiddle}>
+                    <Paper elevation={6} classes={{ root: classes.root }}>
+                        {dataMap}
+                                <span style={errorMessage}>
+                                    <span className={styles.errorMessage}>
+                                        <label>ERROR : {errorLabel}</label>
+                                    </span>
+                                </span>
+                        <ButtonOutlined method={loadBeforeClick} title={'Calculate'}/>
+                    </Paper>
+                </div>
+
+                <div  className={styles.InnerDivRight}>
+                    
+                </div>
+
+            </div>
+
         </>
     )
 }

@@ -54,3 +54,35 @@
     font-size: 90%;
     color: teal;
 }
+.OuterDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 550px) {
+    .OuterDiv {
+        flex-direction: row;
+    }
+    .InnerDivLeft .InnerDivRight {
+    
+        background-color: cadetblue !important;
+    }
+    .InnerDivMiddle {
+        width: 80%;
+    }
+  }
+
+
+@media only screen and (min-width: 817px) {
+    .OuterDiv {
+        flex-direction: row;
+    }
+    .InnerDivLeft .InnerDivRight {
+        width: 25%;
+        background-color: cadetblue !important;
+    }
+    .InnerDivMiddle {
+        width: 50%;
+    }
+  }

@@ -4,7 +4,7 @@ import {Divider, Button} from '@material-ui/core';
 import { Link } from 'react-router-dom'
 import '../CSS/sidebar.css'
 
-function Sidebar() {
+function Sidebar(props) {
     const [x, setX] = useState('N')
    
     const hamburgerClass = cx('hamburger', x=='Y'? 'clicked': '')
@@ -18,7 +18,7 @@ function Sidebar() {
     const data = [
         { title : 'About Us', link : '/aboutus', key : 1 },
         { title : 'Contact Us', link : '/contactus', key : 2 },
-         {title : 'Privacy Policy', link : '/notfound', key : 3 }, 
+        { title : 'Privacy Policy', link : '/notfound', key : 3 }, 
         { title : 'Map', link : '/notfound', key : 4 },
         { title : 'Career', link : '/notfound', key : 5},
         { title : 'Blog', link : '/tempblog', key : 6}
@@ -31,7 +31,7 @@ function Sidebar() {
     
     return (
         <div>
-            <section className='section'>
+            <section className='section' style={{display : props.width>900 ? 'none' : 'block'}}>
                 <div id='stupid' className={hamburgerClass} onClick={toggle}>
                     <span className={line1}></span>
                     <span className={line2}></span>

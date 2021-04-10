@@ -49,7 +49,7 @@ function ContactPage() {
            const [demo, setdemo] = React.useState("");
     const conDataArr = [
            'address',
-           '987342106',
+           '9873-XXX-XXX',
            'jasskaur@gmail.com'
 
     ]
